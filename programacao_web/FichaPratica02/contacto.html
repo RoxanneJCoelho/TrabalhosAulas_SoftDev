@@ -1,0 +1,153 @@
+<!-- ESTA VAI SER A PAGINA DO CONTACTO PARA PORMOS O FORMULARIO -->
+<!-- vamos comecar o nosso documento html com o doctype -->
+<!DOCTYPE html>
+
+<!-- configurar a linguagem do site para portugues de portugal -->
+<html lang = "pt-pt">
+
+<!-- configurações do head: o head são informações gerais que não visualizamos, os metadados, sobre o documento -->
+<head>
+    <!-- o meta charset define o conjunto de caracteres que vamos usar -->
+    <meta charset = "UTF-8">
+
+    <!-- garante que todos os ecras do device, não importa o tamanho veem o site da mesma forma, com as mesmas medidas -->
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+    <!-- o author, a description e as keywords ajudam a mostrar mais rapidamente o link do nosso site em motores de buscas -->
+    <meta name = "author" content = "Roxanne Coelho">
+    <meta name = "description" content = "Site para aprender crochet">
+    <meta name = "keywords" content = "crochet, linha, agulha, aprender, primeiros, passos">
+
+    <!-- este titulo é o que aparece na aba do separador -->
+    <title>
+        Meu lindo crochet - Roxanne Coelho
+    </title>
+</head>
+
+<!-- o body é o conteudo do nosso site, aquilo que nós vemos -->
+ <!-- vamos definir 
+  a cor de background do site(background-color), 
+  a fonte do texto(font-family), 
+  a cor das letras (color) 
+  e a margem 0, que é para dizer que queremos que o conteúdo do <body> encoste totalmente às bordas da janela do navegador  -->
+
+<body style = "
+    background-color: #ffd7ab;
+    font-family: Arial;
+    color: #46220f;
+    margin: 0;">
+
+<!-- vamos personalizar o header: o header é o cabeçalho, netse caso contem o título (h1) e a barra de navegação (nav)-->
+ <!-- o text-align: center é para alinhar o texto no centro horizontalmente;
+      o padding é o espaçamento interno: 30 px em cima e em baixo, 10px à esquerda e direita. Isso “alarga” o conteúdo para que não fique colado nas bordas;
+      o margin é o espaço fora do header (as margens): 40px em cima e em baixo, auto nos lados (centraliza horizontalmente)
+      o width é a largura que o header ocupa, 80% da largura da janela
+      o border-radius é para arredondar os cantos e criar um aspeto mais oval
+ -->
+    <header style = "
+        background-color: #cd966c;
+        color: #46220f;
+        text-align: center;
+        padding: 30px 10px;
+        margin: 40px auto;
+        width: 80%;
+        border-radius: 50px;">
+
+        <h1 style = "margin: 0;">
+            Meu lindo crochet - Roxanne Coelho
+        </h1>
+        <!-- o marquee é para criar um rodapé que vai passando pela página -->  
+        <marquee direction = "right" style = "font-weight: bold; margin-top: 10px;">
+            Aprendam a fazer crochet de forma didática e divertida!
+        </marquee>
+
+        <!-- o text decoration é para não ficar sublinhado -->
+        <nav style = "margin-top: 20px;">
+            <a href = "Ficha02.html" style = "margin: 0 15px; color: #ffffff; background-color: #9a5833; padding: 8px 12px; border-radius: 10px; text-decoration: none;">Início</a>
+            <a href = "cronologia.html" style = "margin: 0 15px; color: #ffffff; background-color: #9a5833; padding: 8px 12px; border-radius: 10px;text-decoration: none;">Cronologia</a>
+            <a href = "contacto.html" style = "margin: 0 15px; color: #ffffff; background-color: #9a5833; padding: 8px 12px; border-radius: 10px; text-decoration: none;">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- esta é a parte do formulário!! -->
+    <main>
+        <article>
+            <section>
+                <h2 style = "
+                    color: #46220f; 
+                    text-align: center;
+                    margin-bottom: 20px;">
+                    Tem alguma dúvida? Entre em contacto comigo!
+                </h2>
+        <!-- aqui defimimos as caracteristicas da caixinha do formulário:
+         max-width: 1100px é a largura maxima que a caixa pode ocupar
+         margin: 0 auto centraliza o formulário no ecrã
+         padding: 30px adiciona espaço interno ao formulário
+         font-size: 16px reduz o tamanho da letra para não ficar exagerado
+         width: 100% nos inputs e textarea faz com que ocupem toda a largura do formulário -->
+    
+                <form action = "processa.php" method = "post" style = "
+                    background-color: #e2b789;
+                    max-width: 1100px;
+                    margin: 0 auto;
+                    padding: 30px;
+                    border-radius: 10px;">
+        
+                    <label for = "nome" style = "font-size: 16px;">
+                        Nome:
+                    </label><br>
+                    <input type = "text" id = "nome" name = "nome" style = "width: 100%;"><br><br>
+        
+                    <label for = "email" style = "font-size: 16px;">
+                        E-mail:
+                    </label><br>
+                    <input type = "email" id = "email" name = "email" style = "width: 100%;"><br><br>
+        
+                    <label for = "genero" style = "font-size: 16px;"> 
+                        Género:
+                    </label><br>
+                    <select id = "genero" name = "genero" style = "width: 100%;">
+                        <option value = "masculino">
+                            Masculino
+                        </option>
+                        <option value = "feminino">
+                            Feminino
+                        </option>
+                        <option value = "não dizer">
+                            Prefiro não dizer
+                        </option>
+                    </select><br><br>
+        
+                    <label style = "font-size: 16px;">
+                        Quais suas dúvidas no crochet?
+                    </label><br>
+                        <input type = "checkbox" name ="duvidas_crochet" value = "ponto muito largo"> Ponto muito largo<br>
+                        <input type = "checkbox" name = "duvidas_crochet" value = "ponto muito apertado"> Ponto muito apertado<br>
+                        <input type = "checkbox" name = "duvidas_crochet" value = "lã de baixa qualidade"> Lã de baixa qualidade<br><br>
+                    
+        
+                    <label for = "mensagem" style = "font-size: 16px;">
+                        Outra questão que gostaria de colocar?
+                    </label><br>
+                    <textarea name = "mensagem" id = "mensagem" rows = "4" style = "width: 100%;">
+    
+                    </textarea><br><br>
+        
+                    <button type = "submit" style = "
+                        background-color: #46220f;
+                        color: white;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 6px;
+                        cursor: pointer;">
+                        Enviar
+                    </button>
+                </form>
+            </section>
+        </article>
+    </main>
+    
+    <!-- o footer é o rodapé que fica no final da página -->
+    <footer style="background-color: darkgrey; font-size: 14px; color: white; margin-top: 40px; text-align: center; padding: 10px;">
+        <p>&copy; 2025 Roxanne Coelho. Todos os direitos reservados.</p>
+    </footer>

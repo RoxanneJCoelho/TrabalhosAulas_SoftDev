@@ -1,3 +1,4 @@
+<!-- ESTA VAI SER A PÁGINA PRINCIPAL - INICIO -->
 <!-- vamos comecar o nosso documento html com o doctype -->
 <!DOCTYPE html>
 
@@ -37,68 +38,61 @@
     margin: 0;">
 
 <!-- vamos personalizar o header: o header é o cabeçalho, netse caso contem o título (h1) e a barra de navegação (nav)-->
- <!-- 
+ <!-- o text-align: center é para alinhar o texto no centro horizontalmente;
+      o padding é o espaçamento interno: 30 px em cima e em baixo, 10px à esquerda e direita. Isso “alarga” o conteúdo para que não fique colado nas bordas;
+      o margin é o espaço fora do header (as margens): 40px em cima e em baixo, auto nos lados (centraliza horizontalmente)
+      o width é a largura que o header ocupa, 80% da largura da janela
+      o border-radius é para arredondar os cantos e criar um aspeto mais oval
  -->
     <header style = "
         background-color: #cd966c;
         color: #46220f;
         text-align: center;
-        padding: 30px 0;
+        padding: 30px 10px;
         margin: 40px auto;
         width: 80%;
         border-radius: 50px;">
 
-        <h1 style="margin: 0;">
+        <h1 style = "margin: 0;">
             Meu lindo crochet - Roxanne Coelho
         </h1>
-  
-        <marquee direction="right" style="font-weight: bold; margin-top: 10px;">
-    Aprendam a fazer crochet de forma didática e divertida!
+        <!-- o marquee é para criar um rodapé que vai passando pela página -->  
+        <marquee direction = "right" style = "font-weight: bold; margin-top: 10px;">
+            Aprendam a fazer crochet de forma didática e divertida!
         </marquee>
 
-        <nav style="margin-top: 20px;">
-    <a href="#inicio" style="margin: 0 15px; color: #ffffff; background-color: #b85c9e; padding: 8px 12px; border-radius: 10px; text-decoration: none;">Início</a>
-    <a href="#sobre" style="margin: 0 15px; color: #ffffff; background-color: #b85c9e; padding: 8px 12px; border-radius: 10px; text-decoration: none;">Sobre</a>
-    <a href="#projetos" style="margin: 0 15px; color: #ffffff; background-color: #b85c9e; padding: 8px 12px; border-radius: 10px; text-decoration: none;">Projetos</a>
-    <a href="#contacto" style="margin: 0 15px; color: #ffffff; background-color: #b85c9e; padding: 8px 12px; border-radius: 10px; text-decoration: none;">Contacto</a>
+        <!-- o text decoration é para não ficar sublinhado -->
+        <nav style = "margin-top: 20px;">
+            <a href = "Ficha02.html" style = "margin: 0 15px; color: #ffffff; background-color: #9a5833; padding: 8px 12px; border-radius: 10px; text-decoration: none;">Início</a>
+            <a href = "cronologia.html" style = "margin: 0 15px; color: #ffffff; background-color: #9a5833; padding: 8px 12px; border-radius: 10px;text-decoration: none;">Cronologia</a>
+            <a href = "contacto.html" style = "margin: 0 15px; color: #ffffff; background-color: #9a5833; padding: 8px 12px; border-radius: 10px; text-decoration: none;">Contacto</a>
         </nav>
     </header>
 
-        <a href="imagem_teste.jpg"><img src="foto de crochet.webp" alt="deu erro" width="20%"></a>
-
-    <article>
+    <!-- isto foi um teste para usar uma imagem como link mas para este projeto não vai ser necessário:
+     <a href="imagem_teste.jpg"><img src="foto_minha.jpg" alt="deu erro" width="20%"></a>
+      -->
+    <main style = "text-align: left; margin: 2%;">
+        <article>
             <section>
-                <p style="font-size: 20px;">
-                    Olá a tod@s! O meu nome é 
-                    <b style="color: #54330b;">Roxanne Coelho</b> 
-                    e criei este site para ensinar 
-                    <i>crochet</i> de forma didática e divertida!
-                </p>
-
-                <p style="font-size: 16px;">
-                    Sou mestre em 
-                    <u>Biologia - Ramo Ecologia Aplicada</u> pela 
-                    <a href="https://www.ua.pt/" target="_blank" style="color: #0066cc;">Universidade de Aveiro</a> 
-                    e <i>crochet</i> é um dos meus hobbies preferidos.
-                </p>
-
-                <img src="foto de crochet.webp" alt="Foto de crochet" width="30%">
-            </section>
-
-            <section>
-                <p style="font-size: 20px; color: #d2691e;">Para começar no mundo de crochet é preciso:</p>
-                <ul style="font-size: 16px;">
+                <p style = "font-size: 20px; color: #46220f;"><b>Para começar no mundo de crochet é preciso:</b></p>
+                <!-- o ul é uma lista não ordenada -->
+                <ul style = "font-size: 16px;">
                     <li>Linhas de lã (ou acrílico);</li>
                     <li>Agulha de crochet adequada à espessura da linha;</li>
                     <li>Tesoura</li>
                     <li>Agulha de malha para finalizar os projetos</li>
-                    <li><b style="color: #ff4500;">Muita paciência e força de vontade!</b></li>
+                    <li><strong>Muita paciência e força de vontade!</strong></b></li>
                 </ul>
+                <p>
+                    Clique <a href = "https://www.armazemdasmanualidades.com/" style = "color: #872c2c;">aqui</a> para comprar o seu material de crochet a um prazo acessível.
+                </p>
             </section>
 
             <section>
-                <p style="font-size: 20px; color: #d2691e;">Vamos começar com um projeto simples: fazer um quadrado!</p>
-                <ol type="1" style="font-size: 16px;">
+                <p style = "font-size: 20px; color: #46220f;"><b>Vamos começar com um projeto simples: fazer um quadrado!</b></p>
+                <!-- o ol é uma lista ordenada -->
+                <ol type = "1" style = "font-size: 16px;">
                     <li>Ponto corrente</li>
                     <li>Ponto simples</li>
                     <li>Virar o projeto</li>
@@ -108,87 +102,64 @@
             </section>
 
             <section>
-                <p style="font-size: 18px;">Aqui têm um vídeo de caracóis à beira da estrada:</p>
-                <video controls width="200">
-                    <source src="video_teste.mp4" type="video/mp4">
-                    O seu navegador não suporta a reprodução de vídeo em HTML5.
+                <p style = "font-size: 18px;">Aqui têm um vídeo simples para exemplificar o ponto corrente:</p>
+                <video controls width = "400">
+                    <source src = "video_crochet.mp4" type = "video/mp4">
+                    O seu navegador não suporta a reprodução de vídeo em HTML5
                 </video>
             </section>
-
             <section>
-                <p style="font-size: 20px; color: #b85c9e;">Tem alguma dúvida? Entre em contacto comigo!</p>
-                <form action="processa.php" method="post" style="background-color: #f0e6ff; padding: 15px; border-radius: 10px;">
-                    <label for="nome" style="font-size: 16px;">Nome: </label>
-                    <input type="text" id="nome" name="nome"><br><br>
+                <p style = "font-size: 18px;">Se preferir, assista este video no Youtube sobre como começar o ponto corrente:</p>
 
-                    <label for="email" style="font-size: 16px;">E-mail: </label>
-                    <input type="email" id="email" name="email"><br><br>
+                <!-- o iframe é para por videos do youtube dentro do nosso site 
+                 width="560" e height="315" definem o tamanho do vídeo
+                 src="https://www.youtube.com/embed/BKpGVnwABc8"; o link precisa usar o formato /embed/ para funcionar dentro de um iframe
+                 frameborder="0"; remove a borda
+                 allowfullscreen; permite o modo de ecrã inteiro-->
 
-                    <label for="genero" style="font-size: 16px;">Género:</label>
-                    <select id="genero" name="genero">
-                        <option value="masculino">Masculino</option>
-                        <option value="feminino">Feminino</option>
-                        <option value="não dizer">Prefiro não dizer</option>
-                    </select><br><br>
-
-                    <label style="font-size: 16px;">Quais suas dúvidas no crochet?</label><br>
-                    <input type="checkbox" name="duvidas_crochet" value="ponto muito largo"> Ponto muito largo<br>
-                    <input type="checkbox" name="duvidas_crochet" value="ponto muito apertado"> Ponto muito apertado<br>
-                    <input type="checkbox" name="duvidas_crochet" value="lã de baixa qualidade"> Lã de baixa qualidade <br><br>
-
-                    <label for="mensagem" style="font-size: 16px;">Outra questão que gostaria de colocar?</label><br>
-                    <textarea name="mensagem" id="mensagem" rows="4" cols="50"></textarea><br><br>
-
-                    <button type="submit" style="background-color: #b85c9e; color: white; padding: 10px 20px; border: none; border-radius: 6px;">Enviar</button>
-                </form>
+                <iframe src = "https://www.youtube.com/embed/BKpGVnwABc8" 
+                        frameborder = "0" 
+                        width = "560" 
+                        height = "315" 
+                        allowfullscreen>
+                        O seu navegador não suporta a reprodução de vídeos do Youtube
+                </iframe>
             </section>
         </article>
+    </main>  
 
-        <section>
-            <table style="margin-top: 30px; width: 100%; text-align: left; font-size: 16px; background-color: #fffafc;">
-                <caption style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Cronologia</caption>
-                <thead style="background-color: #ffe4f0;">
-                    <tr>
-                        <th>Ano</th>
-                        <th>Experiência Académica</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2018</td>
-                        <td>Curso Científico-Humanístico Ciências e Tecnologias</td>
-                    </tr>
-                    <tr>
-                        <td>2021</td>
-                        <td>Licenciatura em Biotecnologia</td>
-                    </tr>
-                    <tr>
-                        <td>2023</td>
-                        <td>Mestrado em Biologia - Ramo Ecologia Aplicada</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
+    <!-- o aside é uma informação que fica ao lado direito do site: vamos por um titulo (sobre mim), uma foto minha e um paragrafo de introdução 
+         - com height: auto ele automaticamente ajusta o conteudo do aside ao tamanho
+         position absolute fica presa e nao mexe com o scroll-->
 
-    <aside style="position: fixed; right: 0; top: 0; width: 200px; height: 100vh; background-color: #fff0fa; padding: 20px; box-shadow: -2px 0 5px rgba(0,0,0,0.1);">
-        <h3 style="color: #c774ad;">Dica rápida ✂️</h3>
-        <p>Não te esqueças de manter a tensão da linha consistente!</p>
+    <aside style = "
+            position: absolute;
+            right: 10px;
+            top: 0;
+            margin-top: 230px;
+            width: 250px;
+            height: auto; 
+            background-color: #cd966c;
+            border-radius: 50px;
+            padding: 20px;
+            text-align: center;">
 
-        <h3 style="color: #c774ad;">Materiais úteis</h3>
-        <ul>
-            <li>Marcadores de ponto</li>
-            <li>Fita métrica</li>
-            <li>Linhas 100% algodão</li>
-        </ul>
+        <h3 style = "color: #46220f;">
+            SOBRE MIM
+        </h3>
 
-        <h3 style="color: #c774ad;">Inspiração 💭</h3>
-        <p>“Crochet é como magia com um fio só.”</p>
+        <img src = "/foto_minha.jpg" alt = "Foto minha" width="70%">
+        <p> 
+            Olá a tod@s! O meu nome é 
+            <b style="color: #54330b;">Roxanne Coelho</b> 
+            e criei este site para ensinar 
+            <i>crochet</i> de forma didática e divertida!
+        </p>
     </aside>
 
+<!-- o footer é o rodapé que fica no final da página -->
     <footer style="background-color: darkgrey; font-size: 14px; color: white; margin-top: 40px; text-align: center; padding: 10px;">
         <p>&copy; 2025 Roxanne Coelho. Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>

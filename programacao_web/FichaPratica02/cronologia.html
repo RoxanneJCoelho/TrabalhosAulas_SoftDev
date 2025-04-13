@@ -1,0 +1,106 @@
+<!-- ESTA VAI SER A PAGINA DA CRONOLOGIA PARA PORMOS A TABELA -->
+<!-- vamos comecar o nosso documento html com o doctype -->
+<!DOCTYPE html>
+
+<!-- configurar a linguagem do site para portugues de portugal -->
+<html lang = "pt-pt">
+
+<!-- configurações do head: o head são informações gerais que não visualizamos, os metadados, sobre o documento -->
+<head>
+    <!-- o meta charset define o conjunto de caracteres que vamos usar -->
+    <meta charset = "UTF-8">
+
+    <!-- garante que todos os ecras do device, não importa o tamanho veem o site da mesma forma, com as mesmas medidas -->
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+    <!-- o author, a description e as keywords ajudam a mostrar mais rapidamente o link do nosso site em motores de buscas -->
+    <meta name = "author" content = "Roxanne Coelho">
+    <meta name = "description" content = "Site para aprender crochet">
+    <meta name = "keywords" content = "crochet, linha, agulha, aprender, primeiros, passos">
+
+    <!-- este titulo é o que aparece na aba do separador -->
+    <title>
+        Meu lindo crochet - Roxanne Coelho
+    </title>
+</head>
+
+<!-- o body é o conteudo do nosso site, aquilo que nós vemos -->
+ <!-- vamos definir 
+  a cor de background do site(background-color), 
+  a fonte do texto(font-family), 
+  a cor das letras (color) 
+  e a margem 0, que é para dizer que queremos que o conteúdo do <body> encoste totalmente às bordas da janela do navegador  -->
+
+<body style = "
+    background-color: #ffd7ab;
+    font-family: Arial;
+    color: #46220f;
+    margin: 0;">
+
+<!-- vamos personalizar o header: o header é o cabeçalho, netse caso contem o título (h1) e a barra de navegação (nav)-->
+ <!-- o text-align: center é para alinhar o texto no centro horizontalmente;
+      o padding é o espaçamento interno: 30 px em cima e em baixo, 10px à esquerda e direita. Isso “alarga” o conteúdo para que não fique colado nas bordas;
+      o margin é o espaço fora do header (as margens): 40px em cima e em baixo, auto nos lados (centraliza horizontalmente)
+      o width é a largura que o header ocupa, 80% da largura da janela
+      o border-radius é para arredondar os cantos e criar um aspeto mais oval
+ -->
+    <header style = "
+        background-color: #cd966c;
+        color: #46220f;
+        text-align: center;
+        padding: 30px 10px;
+        margin: 40px auto;
+        width: 80%;
+        border-radius: 50px;">
+
+        <h1 style = "margin: 0;">
+            Meu lindo crochet - Roxanne Coelho
+        </h1>
+        <!-- o marquee é para criar um rodapé que vai passando pela página -->  
+        <marquee direction = "right" style = "font-weight: bold; margin-top: 10px;">
+            Aprendam a fazer crochet de forma didática e divertida!
+        </marquee>
+
+        <!-- o text decoration é para não ficar sublinhado -->
+        <nav style = "margin-top: 20px;">
+            <a href = "Ficha02.html" style = "margin: 0 15px; color: #ffffff; background-color: #9a5833; padding: 8px 12px; border-radius: 10px; text-decoration: none;">Início</a>
+            <a href = "cronologia.html" style = "margin: 0 15px; color: #ffffff; background-color: #9a5833; padding: 8px 12px; border-radius: 10px;text-decoration: none;">Cronologia</a>
+            <a href = "contacto.html" style = "margin: 0 15px; color: #ffffff; background-color: #9a5833; padding: 8px 12px; border-radius: 10px; text-decoration: none;">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- ESTA VAI SER A PARTE DOS LINKS E TABELA -->
+     <main>
+        <article>
+            <section>
+                <table style = "margin: auto; width: 70%; text-align: left; font-size: 16px; background-color: #fec88d;">
+                    <caption style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Cronologia da minha aprendizagem de crochet</caption>
+                    <thead style="background-color: #e3a35e;">
+                        <tr>
+                            <th>Ano</th>
+                            <th>Projetos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2010</td>
+                            <td>Primeiros pontos: ponto corrente e ponto simples</td>
+                        </tr>
+                        <tr>
+                            <td>2013</td>
+                            <td>Primeiro projeto: mala de crochet</td>
+                        </tr>
+                        <tr>
+                            <td>2017</td>
+                            <td>Ponto meio duplo, duplo e triplo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+     </main>
+
+    <!-- o footer é o rodapé que fica no final da página -->
+    <footer style="background-color: darkgrey; font-size: 14px; color: white; margin-top: 40px; text-align: center; padding: 10px;">
+        <p>&copy; 2025 Roxanne Coelho. Todos os direitos reservados.</p>
+    </footer>
