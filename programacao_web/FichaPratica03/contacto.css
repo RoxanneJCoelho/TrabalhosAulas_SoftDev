@@ -145,11 +145,9 @@ footer {
     .secao-conteudo {
         order: 1;
       }
+    }
   
-    .sobre-mim {
-      order: 2; /* garante que vai para o fim */
-    }   
-  }
+
 
 @keyframes slide {
     0% { transform: translateX(0); }
