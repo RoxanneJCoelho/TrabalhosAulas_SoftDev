@@ -1,0 +1,44 @@
+
+/* Tabela */
+table {
+    margin: auto;
+    width: 70%;
+    text-align: left;
+    font-size: 16px;
+    background-color: #fec88d;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+thead {
+    background-color: #e3a35e;
+    color: #46220f;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #d68e52;
+}
+
+tbody tr:hover {
+    background-color: #f8b979;
+}
+
+/* Footer */
+footer {
+    background-color: darkgrey;
+    font-size: 14px;
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+}

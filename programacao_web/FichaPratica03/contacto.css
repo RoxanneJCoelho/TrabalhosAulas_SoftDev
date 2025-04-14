@@ -1,0 +1,33 @@
+h2 {
+    color: #46220f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #e2b789;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+button {
+    background-color: #46220f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: darkgrey;
+    font-size: 14px;
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+}
