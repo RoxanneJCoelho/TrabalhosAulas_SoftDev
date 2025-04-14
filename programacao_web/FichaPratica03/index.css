@@ -49,22 +49,18 @@ p {
     letter-spacing: 2px;
 
 }
-
 a#compra:link {
-    color:blueviolet;
+    color:palevioletred;
 }
 
 a#compra:hover {
     color: blue;    
 }
 
-a#compra:visited {
-    color: rgb(219, 20, 20);
-}
-
 a#compra:active {
     color: rgb(28, 107, 12);
 }
+
 
 ul, ol {
     font-size: 16px;
