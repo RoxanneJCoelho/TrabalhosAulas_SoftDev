@@ -9,19 +9,22 @@
     <title>Meu lindo crochet - Roxanne Coelho</title>
     <!-- este link é para lihar o html ao css -->
     <link rel = "stylesheet" href = "index.css">
+    <!-- esta é a fonte do google fonts que vamos usar no titulo -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
     <header>
-        <!-- Container do título e do marquee -->
-        <div class="header-topo">
-            <h1>Meu lindo crochet - Roxanne Coelho</h1>
-    
-            <marquee direction="right">
-                Aprendam a fazer crochet de forma didática e divertida!
-            </marquee>
+        <div class = "cabecalho">
+            <div class="header-topo">
+                <h1>Meu lindo crochet - Roxanne Coelho</h1>
+            </div>
+            <div class="banner-texto">
+                <p>Aprendam a fazer crochet de forma didática e divertida!</p>
+            </div>
         </div>
-    
+        
         <!-- Container da barra de navegação -->
         <div class="menu-container">
             <nav>
@@ -91,36 +94,26 @@
                         O seu navegador não suporta a reprodução de vídeos do Youtube
                 </iframe>
             </section>
-        </div>
-
-        <!-- o aside é uma informação que fica ao lado direito do site: vamos por um titulo (sobre mim), uma foto minha e um paragrafo de introdução 
-     com height: auto ele automaticamente ajusta o conteudo do aside ao tamanho
-     position absolute fica presa e nao mexe com o scroll
-     neste caso vamos por o aside dentro, porque faz parte do conteudo do site, se fossem anuncios o certo era colocar fora-->
-
-        <div class="sobre-mim">
-            <aside>
-                <h3>
-                    SOBRE MIM
-                </h3>
-            
-                <img src = "foto_minha.webp" alt = "Foto minha" width="70%">
-                <p> 
-                    Olá a tod@s! O meu nome é 
-                    <b>Roxanne Coelho</b> 
-                    e criei este site para ensinar 
-                    <i>crochet</i> de forma didática e divertida!
-                </p>
-            </aside>
-        </div>        
+        </div>                
     </article> 
+    <div class="sobre-mim">
+            <h3>
+                SOBRE MIM
+            </h3>
+        
+            <img src = "foto_minha.webp" alt = "Foto minha" width="70%">
+            <p> 
+                Olá a tod@s! O meu nome é 
+                <b>Roxanne Coelho</b> 
+                e criei este site para ensinar 
+                <i>crochet</i> de forma didática e divertida!
+            </p>
+        </div>
 </main>  
 
 <!-- o footer é o rodapé que fica no final da página -->
 <footer>
     <p>&copy; 2025 Roxanne Coelho. Todos os direitos reservados.</p>
 </footer>
-</body>
-</html>
 </body>
 </html>

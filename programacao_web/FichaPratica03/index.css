@@ -1,17 +1,16 @@
 * { margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
 body { 
     background-color: #ffd7ab;
-    font-family: Arial;
+    font-family: 'Quicksand', Arial, sans-serif;
     color: #46220f;
     margin: 0;
 }
 
-.header-topo {
+.cabecalho {
     background-color: #fcead7;
     margin-top: 50px;
     padding: 10px;
@@ -23,6 +22,20 @@ body {
     /* centralização horizontal */
     margin-left: auto;
     margin-right: auto;
+}
+
+.banner-texto {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.banner-texto p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: slide 10s linear infinite;
+    color: #8b4513;
+    font-style: italic;
 }
 
 .menu-container{
@@ -38,6 +51,13 @@ body {
     padding: 8px 12px; 
     border-radius: 10px; 
     text-decoration: none;
+}
+
+.nav1:hover,
+.nav2:hover,
+.nav3:hover {
+    background-color: #7a3f24;
+    transition: 0.3s;
 }
 
 .conteudo-principal {
@@ -81,16 +101,14 @@ a#compra:active {
   margin-bottom: 40px; /* aumenta ou diminui conforme preferires */
 }
 
-ul, ol {
-    font-size: 16px;
+ul li, ol li {
+    margin-bottom: 8px;
 }
 
 .sobre-mim {
-    position: absolute;
     right: 10px;
     top: 0;
-    margin-top: 230px;
-    width: 250px;
+    width: 40%;
     height: auto; 
     background-color: #cd966c;
     border-radius: 50px;
@@ -98,24 +116,17 @@ ul, ol {
     text-align: center;
     flex: 1 1 30%;
     padding: 20px;
-    border-radius: 12px;   
+    border-radius: 12px; 
 
 }
 
-/* Responsividade */
-@media screen and (max-width: 768px) {
-    .conteudo-principal {
-      flex-direction: column;
-    }
-  
-    .sobre-mim {
-      order: 2; /* garante que vai para o fim */
-    }
-  
-    .secao-conteudo {
-      order: 1;
-    }
-  }
+.video-meu video,
+.video-youtube iframe {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
 footer {
     background-color: darkgrey; 
     font-size: 14px; 
@@ -124,3 +135,25 @@ footer {
     text-align: center; 
     padding: 10px;
 }
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .conteudo-principal {
+      flex-direction: column;
+    }
+
+    .secao-conteudo {
+        order: 1;
+      }
+  
+    .sobre-mim {
+      order: 2; /* garante que vai para o fim */
+    }   
+  }
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+
