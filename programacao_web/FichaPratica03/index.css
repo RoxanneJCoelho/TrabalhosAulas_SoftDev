@@ -29,14 +29,18 @@ marquee {
     margin-top: 10px;
 }
 
-.nav1, .nav2, .nav3 {
-    margin: 0 15px; 
-    color: #ffffff; 
-    background-color: #9a5833; 
-    padding: 8px 12px; 
-    border-radius: 10px; 
-    text-decoration: none;
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #9a5833;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
 }
+
 
 main {
     text-align: left; 
@@ -49,8 +53,8 @@ p {
     letter-spacing: 2px;
 
 }
-a#compra:link {
-    color:palevioletred;
+a#compra:link{
+    color: darkred;
 }
 
 a#compra:hover {
@@ -60,7 +64,9 @@ a#compra:hover {
 a#compra:active {
     color: rgb(28, 107, 12);
 }
-
+a#compra:visited {
+    color:palevioletred;
+}
 
 ul, ol {
     font-size: 16px;
