@@ -107,13 +107,16 @@ form {
     width: 100%;
 }
 
-input{
+.normal1{
     width: 100%;
 }
-select{
-    width:100%
-}
 
+select{
+    width:100%;
+}
+textarea{
+    width: 100%;
+}
 button {
     background-color: #46220f;
     color: white;
