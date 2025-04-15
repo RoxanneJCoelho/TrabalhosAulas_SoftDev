@@ -3,11 +3,10 @@
     box-sizing: border-box;
 }
 
-body { 
+body {
     background-color: #ffd7ab;
     font-family: 'Quicksand', Arial, sans-serif;
     color: #46220f;
-    margin: 0;
 }
 
 .cabecalho {
@@ -116,8 +115,15 @@ ul li, ol li {
     text-align: center;
     flex: 1 1 30%;
     padding: 20px;
-    border-radius: 12px; 
+    border-radius: 12px;
+    }
 
+.sobre-mim h3,
+.sobre-mim img,
+.sobre-mim p {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .video-meu video,
