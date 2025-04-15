@@ -54,11 +54,12 @@ body {
     text-decoration: none; /*Remove o sublinhado padrão de links HTML.*/
 }
 /* efeito hover */
+/* Aplica o estilo quando o usuário passa o rato (mouse) por cima de um dos botões. */
 .nav1:hover, 
 .nav2:hover,
 .nav3:hover {
-    background-color: #7a3f24;
-    transition: 0.3s;
+    background-color: #7a3f24; /* Escurece um pouco o fundo, criando um efeito visual de "botão pressionado" ou interação. */
+    transition: 0.3s; /*Faz com que a mudança de cor ocorra suavemente ao longo de 0.3 segundos, em vez de de forma instantânea. */
 }
 
 .conteudo-principal {
