@@ -1,58 +1,60 @@
+/* este conjunto de regras no seletor universal é conhecido como reset/normalização. */
 * { margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body {
-    background-color: #ffd7ab;
-    font-family: 'Quicksand', Arial, sans-serif;
-    color: #46220f;
+    background-color: #ffd7ab;  /*cor de fundo */
+    font-family: 'Quicksand', Arial, sans-serif; /*fonte de texto */
+    color: #46220f; /*cor de letra */
 }
 
 .cabecalho {
     background-color: #fcead7;
-    margin-top: 50px;
-    padding: 10px;
-    text-align: center;
-    line-height: 1.5;
-    border-bottom: 2px solid #dba97c;
-    border-radius: 50px;
-    width: 70%;
-    /* centralização horizontal */
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 50px; /* espaçamento acima da div */
+    padding: 10px; /* Adiciona espaçamento interno entre o conteúdo do cabeçalho (ex: texto) e as bordas da div. Garante que o texto não fique colado nas bordas */
+    text-align: center; /* Centraliza horizontalmente o conteúdo textual da div */
+    line-height: 1.5; /* Define a altura entre as linhas de texto */
+    border-bottom: 2px solid #dba97c; /* uma linha sólida de 2px na parte inferior do cabeçalho*/
+    border-radius: 50px; /*Arredonda os cantos da caixa*/
+    width: 70%; /*Define que a largura da div deve ser 70% da largura da janela (ou do elemento pai).*/
+    margin-left: auto; /* centralização horizontal */
+    margin-right: auto; /* centralização horizontal */
 }
 
 .banner-texto {
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites da div. É essencial aqui, porque o texto vai se mover para fora da div com a animação.*/
+    white-space: nowrap; /*Ele será exibido numa única linha contínua, o que é necessário para o efeito de "texto rolante" (tipo letreiro)*/
 }
 
 .banner-texto p {
-    display: inline-block;
-    padding-left: 100%;
-    animation: slide 10s linear infinite;
+    display: inline-block; /*Permite que o <p> se comporte como um elemento em linha com largura definida, essencial para que ele "deslize" dentro da div.*/
+    padding-left: 100%; /*Move o texto completamente para fora da tela (à direita) antes de começar a animação.*/
+    animation: slide 10s linear infinite; /*Aplica uma animação chamada slide (que deve estar definida no @keyframes) que dura 10 segundos, tem velocidade constante (linear) e repete para sempre (infinite).*/
     color: #8b4513;
-    font-style: italic;
+    font-style: italic; /*Coloca o texto em itálico*/
 }
 
-.menu-container{
+/*O display: flex vai colocar os botoes da nav lado-a-lado, e o justify-content: center vai garantir que fiquem centralizados dentro do container .menu-container.*/
+.menu-container {
     margin-top: 30px;
-    display: flex;
-    justify-content: center;
+    display: flex; /*podes alinhar os links horizontalmente, centralizar, adicionar espaçamento automático, entre outras opções poderosas de layout.*/
+    justify-content: center; /*centraliza horizontalmente os elementos filhos (os links de navegação) dentro do container.*/
 }
 
+/*Seleciona os três botões de navegação com essas classes, aplicando o mesmo estilo a todos.*/
 .nav1, .nav2, .nav3 {
-    margin: 0 15px; 
+    margin: 0 15px; /*Adiciona 15px de espaço lateral (direita e esquerda), mantendo os botões separados horizontalmente e 0px no topo e embaixo (sem margem vertical).*/
     color: #ffffff; 
     background-color: #9a5833; 
-    padding: 8px 12px; 
+    padding: 8px 12px; /*Adiciona espaço interno: 8px em cima/baixo e 12px à esquerda/direita*/
     border-radius: 10px; 
-    text-decoration: none;
+    text-decoration: none; /*Remove o sublinhado padrão de links HTML.*/
 }
-
-.nav1:hover,
+/* efeito hover */
+.nav1:hover, 
 .nav2:hover,
 .nav3:hover {
     background-color: #7a3f24;
