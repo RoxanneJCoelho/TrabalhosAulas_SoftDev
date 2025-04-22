@@ -18,15 +18,13 @@ public class Ex04 {
         // Calcular o perimetro
         perimetro = 2 * raio * 3.14;
 
-        // Apresentar a area
+        // Apresentar o perimetro
         System.out.println("Perimetro: " + perimetro);
 
         // Calcular a area
-        area = Math.pow(raio, 2 ) * 3.14;
+        area = raio * raio * 3.14;
 
         // Apresentar a area
         System.out.println("Area: " + area);
-
-
     }
 }
