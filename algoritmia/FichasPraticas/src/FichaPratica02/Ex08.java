@@ -9,7 +9,7 @@ public class Ex08 {
         Scanner input = new Scanner(System.in);
 
         // Declarar variáveis
-        double nota1, nota2, nota3, media ;
+        double nota1, nota2, nota3, media;
 
         // Ler nota1
         System.out.println("Insira a primeira nota:");
