@@ -1,6 +1,5 @@
 package FichaPratica01;
 
-// Importar a biblioteca Scanner para ler os inputs do utilizador
 import java.util.Scanner;
 
 public class Ex08 {
@@ -9,53 +8,53 @@ public class Ex08 {
         // Criação do Scanner - Vamos ler inputs do utilizador
         Scanner input = new Scanner(System.in);
 
-        //  Ler variaveis
-        int minuto1, segundo1, minuto2, segundo2, minuto3, segundo3, minuto4, segundo4, minuto5, segundo5, totalSegundos1, totalSegundos2, totalSegundos3, totalSegundos4, totalSegundos5, totalSegundosTotal, horasTotal, restoTotal, minutosTotal, segundosTotal ;
+        // Declarar variáveis
+        // Comecamos com a variavel totalSegundos=0 porque vamos comecar a acumular os valores netsa variavel
+        int totalSegundos = 0, minutosLidos, segundosLidos;
 
-        // Cancao 1
-        System.out.print("Introduza minutos da musica 1:");
-        minuto1 = input.nextInt();
-        System.out.print("Introduza segundos da musica 1:");
-        segundo1 = input.nextInt();
-        totalSegundos1 = minuto1 * 60 + segundo1;
+        // Ler musicas
+        System.out.print("Insira minutos da música 1: ");
+        minutosLidos = input.nextInt();
 
-        // Cancao 2
-        System.out.print("Introduza minutos da musica 2:");
-        minuto2 = input.nextInt();
-        System.out.print("Introduza segundos da musica 2:");
-        segundo2 = input.nextInt();
-        totalSegundos2 = minuto2 * 60 + segundo2;
+        System.out.print("Insira segundos da música 1: ");
+        segundosLidos = input.nextInt();
 
-        // Cancao 3
-        System.out.print("Introduza minutos da musica 3:");
-        minuto3 = input.nextInt();
-        System.out.print("Introduza segundos da musica 3:");
-        segundo3 = input.nextInt();
-        totalSegundos3 = minuto3 * 60 + segundo3;
+        // o total segundos da musica 1 vai ser igual a 0+input dos segundos+input dos minutos*60 para converter em segundos
+        totalSegundos = totalSegundos + segundosLidos + (minutosLidos * 60);
 
-        // Cancao 4
-        System.out.print("Introduza minutos da musica 4:");
-        minuto4 = input.nextInt();
-        System.out.print("Introduza segundos da musica 4:");
-        segundo4 = input.nextInt();
-        totalSegundos4 = minuto4 * 60 + segundo4;
 
-        // Cancao 5
-        System.out.print("Introduza minutos da musica 5:");
-        minuto5 = input.nextInt();
-        System.out.print("Introduza segundos da musica 5:");
-        segundo5 = input.nextInt();
-        totalSegundos5 = minuto5 * 60 + segundo5;
+        // ________________________________________________________
+        System.out.print("\nInsira minutos da música 2: ");
+        minutosLidos = input.nextInt();
 
-        // Total segundos
-        totalSegundosTotal = totalSegundos1 + totalSegundos2 + totalSegundos3 + totalSegundos4 + totalSegundos5;
-        horasTotal = totalSegundosTotal / 3600;
-        restoTotal = totalSegundosTotal % 3600;
-        minutosTotal = restoTotal / 60;
-        segundosTotal = restoTotal % 60;
+        System.out.print("Insira segundos da música 2: ");
+        segundosLidos = input.nextInt();
 
-        // Apresentar a duração do album
-        System.out.println("Duração total do album: " + horasTotal + "hrs, "+ minutosTotal + "min, " + segundosTotal + "seg");
+        totalSegundos = totalSegundos + segundosLidos + (minutosLidos * 60);
+
+        // ________________________________________________________
+        System.out.print("\nInsira minutos da música 3: ");
+        minutosLidos = input.nextInt();
+
+        System.out.print("Insira segundos da música 3: ");
+        segundosLidos = input.nextInt();
+
+        totalSegundos = totalSegundos + segundosLidos + (minutosLidos * 60);
+
+        System.out.println("\nTotal Segundos: " + totalSegundos);
+
+        // Converter em horas, minutos e segundos
+        int horas, minutos, segundos;
+
+        horas = totalSegundos / 3600;
+
+        minutos = (totalSegundos / 60) - (horas * 60);
+
+        segundos = totalSegundos - (horas * 3600) - (minutos * 60);
+
+        System.out.println("\nHoras: " + horas);
+        System.out.println("Minutos: " + minutos);
+        System.out.println("Segundos: " + segundos);
+
     }
-
 }
