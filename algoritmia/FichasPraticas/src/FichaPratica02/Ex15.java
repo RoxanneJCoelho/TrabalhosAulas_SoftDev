@@ -5,14 +5,11 @@ import java.util.Scanner;
 public class Ex15 {
     public static void main(String[] args) {
 
-        // Criação do Scanner - Vamos ler inputs do utilizador
         Scanner input = new Scanner(System.in);
 
-        // Declarar variaveis
         int num1, num2, num3;
         String opcao;
 
-        // Ler variaveis
         System.out.println("Insira um numero: ");
         num1 = input.nextInt();
 
@@ -22,38 +19,52 @@ public class Ex15 {
         System.out.println("Insira outro numero: ");
         num3 = input.nextInt();
 
-        System.out.println("Quer por ordem crescente ou decrescente? Prima C para crescente e D para decrescente: ");
+        System.out.println("Quer ordem crescente (C) ou decrescente (D)?");
         opcao = input.next();
 
-        // Opcao de crescente ou decrescente
-
-        if (opcao == "c") {
-            if(num1< num2 && num2<num3){
-                System.out.println(" A ordem crescente é: " + num1 + "," + num2 + "," + num3);
-            } else if (num2<num3 && num2<num1) {
-                System.out.println(" A ordem crescente é: " + num2 + "," + num1 + "," + num3);
-            } else if (num3<num2 && num3<num1) {
-                System.out.println(" A ordem crescente é: " + num3 + "," + num2 + "," + num1);
+        if (opcao.equals("C")) { // CRESCENTE
+            if (num1 <= num2 && num1 <= num3) {
+                if (num2 <= num3) {
+                    System.out.println("Ordem crescente: " + num1 + ", " + num2 + ", " + num3);
+                } else {
+                    System.out.println("Ordem crescente: " + num1 + ", " + num3 + ", " + num2);
+                }
+            } else if (num2 <= num1 && num2 <= num3) {
+                if (num1 <= num3) {
+                    System.out.println("Ordem crescente: " + num2 + ", " + num1 + ", " + num3);
+                } else {
+                    System.out.println("Ordem crescente: " + num2 + ", " + num3 + ", " + num1);
+                }
+            } else { // num3 é o menor
+                if (num1 <= num2) {
+                    System.out.println("Ordem crescente: " + num3 + ", " + num1 + ", " + num2);
+                } else {
+                    System.out.println("Ordem crescente: " + num3 + ", " + num2 + ", " + num1);
+                }
             }
-            else {
-                System.out.println("Ocorreu um erro");
-            }
-        } else if (opcao == "d") {
-            if(num1>num2 && num2>num3){
-                System.out.println(" A ordem crescente é: " + num1 + "," + num2 + "," + num3);
-            } else if (num2<num3 && num2<num1) {
-                System.out.println(" A ordem crescente é: " + num2 + "," + num1 + "," + num3);
-            } else if (num3<num2 && num3<num1) {
-                System.out.println(" A ordem crescente é: " + num3 + "," + num2 + "," + num1);
-            }
-            else {
-                System.out.println("Ocorreu um erro");
+        } else if (opcao.equals("D")) { // DECRESCENTE
+            if (num1 >= num2 && num1 >= num3) {
+                if (num2 >= num3) {
+                    System.out.println("Ordem decrescente: " + num1 + ", " + num2 + ", " + num3);
+                } else {
+                    System.out.println("Ordem decrescente: " + num1 + ", " + num3 + ", " + num2);
+                }
+            } else if (num2 >= num1 && num2 >= num3) {
+                if (num1 >= num3) {
+                    System.out.println("Ordem decrescente: " + num2 + ", " + num1 + ", " + num3);
+                } else {
+                    System.out.println("Ordem decrescente: " + num2 + ", " + num3 + ", " + num1);
+                }
+            } else { // num3 é o maior
+                if (num1 >= num2) {
+                    System.out.println("Ordem decrescente: " + num3 + ", " + num1 + ", " + num2);
+                } else {
+                    System.out.println("Ordem decrescente: " + num3 + ", " + num2 + ", " + num1);
+                }
             }
         } else {
-            System.out.println("Opcao inválida");
+            System.out.println("Opção inválida! Tem de escrever C ou D.");
         }
-
-
 
     }
 }

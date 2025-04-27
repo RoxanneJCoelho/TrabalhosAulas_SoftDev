@@ -20,17 +20,25 @@ public class Ex14 {
         System.out.println("Insira outro numero: ");
         num3 = input.nextInt();
 
-        // Colocar por ordem crescente
-
-        if(num1< num2 && num2<num3){
-            System.out.println(" A ordem crescente é: " + num1 + "," + num2 + "," + num3);
-        } else if (num2<num3 && num2<num1) {
-            System.out.println(" A ordem crescente é: " + num2 + "," + num1 + "," + num3);
-        } else if (num3<num2 && num3<num1) {
-            System.out.println(" A ordem crescente é: " + num3 + "," + num2 + "," + num1);
-        }
-        else {
-            System.out.println("Ocorreu um erro");
+        // Ordenar manualmente
+        if (num1 <= num2 && num1 <= num3) {
+            if (num2 <= num3) {
+                System.out.println("Ordem crescente: " + num1 + ", " + num2 + ", " + num3);
+            } else {
+                System.out.println("Ordem crescente: " + num1 + ", " + num3 + ", " + num2);
+            }
+        } else if (num2 <= num1 && num2 <= num3) {
+            if (num1 <= num3) {
+                System.out.println("Ordem crescente: " + num2 + ", " + num1 + ", " + num3);
+            } else {
+                System.out.println("Ordem crescente: " + num2 + ", " + num3 + ", " + num1);
+            }
+        } else { // num3 é o menor
+            if (num1 <= num2) {
+                System.out.println("Ordem crescente: " + num3 + ", " + num1 + ", " + num2);
+            } else {
+                System.out.println("Ordem crescente: " + num3 + ", " + num2 + ", " + num1);
+            }
         }
 
 
