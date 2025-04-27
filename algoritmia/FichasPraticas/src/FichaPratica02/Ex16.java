@@ -17,11 +17,11 @@ public class Ex16 {
         } else {
 
             // Calcular número de notas
-            if (valor >= 200) {
-                nota200 = valor / 200;
-                valor = valor % 200;
+            if (valor >= 200) { // se o valor for 200 euros ou mais, calcula quantas notas de 200 cabem
+                nota200 = valor / 200; // quantas notas de 200
+                valor = valor % 200; // sobra o resto que ainda falta decompor
             } else {
-                nota200 = 0;
+                nota200 = 0; // se nao der para tirar notas de 200 euros, poe nota200=0
             }
 
             if (valor >= 100) {
@@ -61,9 +61,10 @@ public class Ex16 {
 
             // Mostrar o resultado
             System.out.println("Notas necessárias:");
-            if (nota200 > 0) {
+            if (nota200 > 0) { // se foram usadas notas de 200, escreve quantas
                 System.out.println(nota200 + " nota(s) de 200€");
             }
+            // a mesma logica aplica se as restantes notas
             if (nota100 > 0) {
                 System.out.println(nota100 + " nota(s) de 100€");
             }
