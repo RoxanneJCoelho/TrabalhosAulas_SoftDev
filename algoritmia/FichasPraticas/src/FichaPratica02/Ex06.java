@@ -19,10 +19,10 @@ public class Ex06 {
         num2 = input.nextDouble();
 
         // Apresentar o menor depois o maior
-        if (num1 > num2) {
-            System.out.println(num1 + " " + num2);
-        } else {
+        if (num1 < num2) {
             System.out.println(num2 + " " + num1);
+        } else {
+            System.out.println(num1 + " " + num2);
         }
     }
 }
