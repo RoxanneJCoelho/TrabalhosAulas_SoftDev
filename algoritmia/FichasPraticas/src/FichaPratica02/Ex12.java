@@ -30,6 +30,7 @@ public class Ex12 {
                 break;
             default:
                 System.out.println("Opção inválida.");
+                break;
         }
     }
 

@@ -9,25 +9,26 @@ public class Ex11 {
         Scanner input = new Scanner(System.in);
 
         // Declarar variáveis
-        double saldo, valor, saldo_final;
+        double saldo, movimento;
 
         // Ler saldo
-        System.out.println("Introduza saldo medio:");
+        System.out.print("Insira o seu saldo:");
         saldo = input.nextDouble();
 
         // Ler valor
-        System.out.println("Introduza valor a movimentar:");
-        valor = input.nextDouble();
-
-        // Calcular saldo final
-        saldo_final = saldo + valor;
+        System.out.print("Introduza valor a movimentar:");
+        movimento = input.nextDouble();
 
         // Apresentar o saldo atual
-        if (saldo_final>=0){
-            System.out.println("Saldo Atual :" + saldo_final);
-        } else {
-            System.out.println("Operação Inválida. Saldo insuficiente. \n Saldo atual: " + saldo);
+        if (saldo + movimento >= 0) { // Movimento válida
+
+            saldo = saldo + movimento; // Se a transicao for valida, soma ou subtrai, se for negativo, apenas apresenta o saldo inicial
+            System.out.println("Transação efetuada");
+
+        } else { // Movimento inválido
+            System.out.println("Transação Inválida");
         }
+        System.out.println("Saldo Atual: " + saldo); // fica fora do if else pq nós sempre queremos saber o saldo, independente se for positivo ou negativo
 
 
     }
