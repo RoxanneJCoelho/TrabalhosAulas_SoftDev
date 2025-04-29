@@ -14,7 +14,7 @@ public class Ex05 {
         numero = input.nextInt();
 
         System.out.print("Introduz uma frase: ");
-        input.nextLine();
+        input.nextLine(); // se fosse o primeiro input nao seria necessario a limpeza do buffer
         frase = input.nextLine();
 
         while (inicio<numero){
