@@ -5,82 +5,52 @@ import java.util.Scanner;
 public class Ex16 {
     public static void main(String[] args) {
 
+        // Criação do Scanner - Vamos ler inputs do utilizador
         Scanner input = new Scanner(System.in);
 
-        int valor, nota200, nota100, nota50, nota20, nota10, nota5;
+        // Declarar as variáveis
+        int montante, notas;
 
-        System.out.print("Insira um valor em euros (múltiplo de 5): ");
-        valor = input.nextInt();
+        // Ler montante
+        System.out.print("Valor a Levantar: ");
+        montante = input.nextInt(); // 525
 
-        if (valor % 5 != 0) {
-            System.out.println("Valor inválido! Tem de ser múltiplo de 5.");
-        } else {
+        if(montante%5==0){ // É múltiplo de 5
 
-            // Calcular número de notas
-            if (valor >= 200) { // se o valor for 200 euros ou mais, calcula quantas notas de 200 cabem
-                nota200 = valor / 200; // quantas notas de 200
-                valor = valor % 200; // sobra o resto que ainda falta decompor
-            } else {
-                nota200 = 0; // se nao der para tirar notas de 200 euros, poe nota200=0
-            }
+            // Notas 200
+            notas = montante / 200;
+            System.out.println("Notas de 200: " + notas);
+            montante = montante % 200;
 
-            if (valor >= 100) {
-                nota100 = valor / 100;
-                valor = valor % 100;
-            } else {
-                nota100 = 0;
-            }
+            // Notas 100
+            notas = montante / 100;
+            System.out.println("Notas de 100: " + notas);
+            montante = montante % 100;
 
-            if (valor >= 50) {
-                nota50 = valor / 50;
-                valor = valor % 50;
-            } else {
-                nota50 = 0;
-            }
+            // Notas 50
+            notas = montante / 50;
+            System.out.println("Notas de  50: " + notas);
+            montante = montante % 50;
 
-            if (valor >= 20) {
-                nota20 = valor / 20;
-                valor = valor % 20;
-            } else {
-                nota20 = 0;
-            }
+            // Notas 20
+            notas = montante / 20;
+            System.out.println("Notas de  20: " + notas);
+            montante = montante % 20;
 
-            if (valor >= 10) {
-                nota10 = valor / 10;
-                valor = valor % 10;
-            } else {
-                nota10 = 0;
-            }
+            // Notas 10
+            notas = montante / 10;
+            System.out.println("Notas de  10: " + notas);
+            montante = montante % 10;
 
-            if (valor >= 5) {
-                nota5 = valor / 5;
-                valor = valor % 5;
-            } else {
-                nota5 = 0;
-            }
+            // Notas 5
+            notas = montante / 5;
+            System.out.println("Notas de   5: " + notas);
 
-            // Mostrar o resultado
-            System.out.println("Notas necessárias:");
-            if (nota200 > 0) { // se foram usadas notas de 200, escreve quantas
-                System.out.println(nota200 + " nota(s) de 200€");
-            }
-            // a mesma logica aplica se as restantes notas
-            if (nota100 > 0) {
-                System.out.println(nota100 + " nota(s) de 100€");
-            }
-            if (nota50 > 0) {
-                System.out.println(nota50 + " nota(s) de 50€");
-            }
-            if (nota20 > 0) {
-                System.out.println(nota20 + " nota(s) de 20€");
-            }
-            if (nota10 > 0) {
-                System.out.println(nota10 + " nota(s) de 10€");
-            }
-            if (nota5 > 0) {
-                System.out.println(nota5 + " nota(s) de 5€");
-            }
+        }else{
+            System.out.println("Não damos trocos");
         }
+
+
 
     }
 }

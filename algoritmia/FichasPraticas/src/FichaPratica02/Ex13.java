@@ -20,9 +20,9 @@ public class Ex13 {
         // Transformar de sistema de 12 horas em sistema de 12 horas
 
         if (minuto < 60){
-            if (hora <= 12) {
+            if (hora <= 12) { // Manha
                 System.out.println(hora + ":" + minuto + "AM");
-            } else if (hora > 13 && hora < 24) {
+            } else if (hora > 13 && hora < 24) { // Tarde
                 System.out.println((hora - 12) + ":" + minuto + "PM");
             } else {
                 System.out.println("Hora inválida");

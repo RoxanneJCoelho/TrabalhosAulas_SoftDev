@@ -21,13 +21,13 @@ public class Ex14 {
         num3 = input.nextInt();
 
         // Ordenar manualmente
-        if (num1 <= num2 && num1 <= num3) {
+        if (num1 <= num2 && num1 <= num3) { // num1 é o menor
             if (num2 <= num3) {
                 System.out.println("Ordem crescente: " + num1 + ", " + num2 + ", " + num3);
             } else {
                 System.out.println("Ordem crescente: " + num1 + ", " + num3 + ", " + num2);
             }
-        } else if (num2 <= num1 && num2 <= num3) {
+        } else if (num2 <= num1 && num2 <= num3) { //num2 é o menor
             if (num1 <= num3) {
                 System.out.println("Ordem crescente: " + num2 + ", " + num1 + ", " + num3);
             } else {
