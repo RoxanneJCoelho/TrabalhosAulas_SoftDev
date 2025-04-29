@@ -7,7 +7,7 @@ public class Ex10 {
 
         Scanner input = new Scanner(System.in);
 
-        int inicio = 2, numero_input = 0;
+        int inicio = 2, numero_input;
 
         System.out.println("Insira um numero: ");
         numero_input=input.nextInt();
