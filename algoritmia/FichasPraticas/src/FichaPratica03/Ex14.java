@@ -27,7 +27,7 @@ public class Ex14 {
             anterior=atual;
 
         }
-        if (crescente){
+        if (crescente){ // crescente == true 
             System.out.println("crescente");
         } else {
             System.out.println("nao crescente");
