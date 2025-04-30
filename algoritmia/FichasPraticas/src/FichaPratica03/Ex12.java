@@ -26,9 +26,9 @@ public class Ex12 {
             }
         }
 
-        System.out.println("[00,25]" + tentativa1);
-        System.out.println("[26,50]" + tentativa2);
-        System.out.println("[51,75]" + tentativa3);
-        System.out.println("[76,100]" + tentativa4);
+        System.out.println("[00,25]: " + tentativa1);
+        System.out.println("[26,50]: " + tentativa2);
+        System.out.println("[51,75]: " + tentativa3);
+        System.out.println("[76,100]: " + tentativa4);
     }
 }

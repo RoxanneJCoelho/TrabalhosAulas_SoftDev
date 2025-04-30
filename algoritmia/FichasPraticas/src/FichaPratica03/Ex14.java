@@ -7,16 +7,30 @@ public class Ex14 {
 
         Scanner input = new Scanner(System.in);
 
-        int tentativa, numero;
+        int total, count = 1, anterior, atual; // count é igual a 1 pq um introduza numero é fora do loop
+        boolean crescente = true;
 
         System.out.print("Quantos números deseja inserir?: ");
-        tentativa = input.nextInt();
+        total = input.nextInt();
 
-        while (tentativa>0) {
+        System.out.print("Introduza um número: ");
+        anterior = input.nextInt();
+
+        while (total>count){
             System.out.print("Introduza um número: ");
-            numero = input.nextInt();
-            tentativa -= 1;
-            numero = 0;
+            atual = input.nextInt();
+            total-=1;
+
+            if (atual<=anterior){
+                crescente = false;
+            }
+            anterior=atual;
+
+        }
+        if (crescente){
+            System.out.println("crescente");
+        } else {
+            System.out.println("nao crescente");
         }
 
     }

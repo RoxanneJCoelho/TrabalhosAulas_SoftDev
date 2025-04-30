@@ -12,17 +12,17 @@ public class Ex09 {
         double somatorio = 1, media; // mete-se somatorio a 1 para cortar o -1
 
 
-        while (numero_input!=-1) {
+        while (numero_input != -1) {
             System.out.print("Insira um número: ");
             numero_input = input.nextInt();
             tentativa = tentativa + 1;
-            System.out.println(" Tentativa numero: "+ tentativa);
-            somatorio =somatorio + numero_input;
+            System.out.println(" Tentativa numero: " + tentativa);
+            somatorio = somatorio + numero_input;
         }
 
-        System.out.println("Somatorio: "+ somatorio);
+        System.out.println("Somatorio: " + somatorio);
 
-        media=somatorio/tentativa;
-        System.out.println("Média: " +  media);
+        media = somatorio / tentativa;
+        System.out.println("Média: " + media);
     }
 }

@@ -7,19 +7,23 @@ public class Ex15 {
 
         Scanner input = new Scanner(System.in);
 
-        int fatorial, total = 0;
+        int numero, num_fat, resultado = 1; // é preciso inicializar resultado e vamos por 1 pq é o elemento neutro da multiplicacao;
 
         System.out.println("Insira um numero não negativo menor que 13: ");
-        fatorial = input.nextInt();
+        numero = input.nextInt();
 
-        while (fatorial<0 && fatorial<13) {
+        while (numero<=0 || numero>=13) {
             System.out.println("Insira um numero não negativo menor que 13: ");
-            fatorial = input.nextInt();
+            numero = input.nextInt();
         }
-        while (fatorial>=1){
-            total = fatorial * (fatorial-1);
-            fatorial-=1;
+
+        num_fat = numero; // só aqui é que podemos inicializar num-fat pq ja temos o dado do numero
+
+        while (num_fat>1){
+            resultado *= num_fat ;
+            num_fat-=1;
         }
-        System.out.println("Fatorial: " + total);
+        System.out.println(" fatorial: "+ resultado);
+
     }
 }
