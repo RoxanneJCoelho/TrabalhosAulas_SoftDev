@@ -7,22 +7,22 @@ public class Ex12 {
 
         Scanner input = new Scanner(System.in);
 
-        int numero, tentativa1=0, tentativa2=0, tentativa3=0, tentativa4=0;
+        int numero, tentativa1 = 0, tentativa2 = 0, tentativa3 = 0, tentativa4 = 0;
 
         System.out.print("Introduza um numero: ");
         numero = input.nextInt();
 
-        while (numero>=0){
+        while (numero >= 0) {
             System.out.print("Introduza um numero: ");
             numero = input.nextInt();
-            if (numero>=0 && numero<=25){
-                tentativa1+=1;
-            } else if (numero>=26 && numero<=50){
-                tentativa2+=1;
-            } else if (numero>=51 && numero <=75){
-                tentativa3+=1;
-            } else if (numero>=76 && numero<=100){
-                tentativa4+=1;
+            if (numero >= 0 && numero <= 25) {
+                tentativa1 += 1;
+            } else if (numero >= 26 && numero <= 50) {
+                tentativa2 += 1;
+            } else if (numero >= 51 && numero <= 75) {
+                tentativa3 += 1;
+            } else if (numero >= 76 && numero <= 100) {
+                tentativa4 += 1;
             }
         }
 

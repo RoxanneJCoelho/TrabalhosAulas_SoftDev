@@ -23,7 +23,7 @@ public class Ex15 {
             resultado *= num_fat ;
             num_fat-=1;
         }
-        System.out.println(" fatorial: "+ resultado);
+        System.out.println("fatorial: "+ resultado);
 
     }
 }
