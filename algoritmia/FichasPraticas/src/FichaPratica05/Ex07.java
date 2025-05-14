@@ -16,14 +16,14 @@ public class Ex07 {
             System.out.print("Indique o número [ " + i + " ]: ");
             array[i] = input.nextInt();
         }
-        // Encontrar o maior valor par
 
+        // Encontrar o maior valor par
         int maiorPar = 0;
         boolean encontrouPar = false;
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
-                if (!encontrouPar || array[i] > maiorPar) {
+                if (!encontrouPar || array[i] > maiorPar) { // se não encontrou um par, ele é o primeiro; se houver um numero maior que o maiorPar, ele atualiza
                     maiorPar = array[i];
                     encontrouPar = true;
                 }
