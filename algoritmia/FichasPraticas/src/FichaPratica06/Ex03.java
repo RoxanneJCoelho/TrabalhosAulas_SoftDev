@@ -1,69 +1,97 @@
 package FichaPratica06;
 
-import java.util.Scanner;
-
 public class Ex03 {
 
-    // Função que verifica se um número é par
 
-    static boolean par(int num) {
-        return num % 2 == 0;
-    }
-    // Função que verifica se um número é positivo ou negativo
-
-    static boolean positivo(int num) {
-        return num >= 0;
-    }
-
-    // Função que verifica se um número é primo
-    static boolean primo(int num) {
-
-        if (num <= 1) {
-            return false; // 0 e 1 não são primos
-        }
-        for (int i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i == 0) {
-                return false; // se for divisível por algum número entre 2 e √num, não é primo
-            }
-        }
-        return true; // se não encontrou nenhum divisor, é primo
-
-    }
-
-    // Função que verifica se um número é perfeito
-    static boolean perfeito(int num) {
-        if (num <= 0) {
+    /**
+     * Função que determina se um número é ou não par
+     *
+     * @param num Número a analisar
+     * @return true se par || false se impar
+     */
+    public static boolean par(int num) {
+        if (num % 2 == 0) {
+            return true;
+        } else {
             return false;
         }
-
-        int soma = 0;
-        // Verifica todos os divisores próprios (exclui o próprio número)
-        for (int i = 1; i < num; i++) {
-            if (num % i == 0) {
-                soma += i;
-            }
-        }
-        return soma == num;
     }
 
-    // Função que verifica se um número é triangular
-    static boolean triangular (int num) {
-        if (num <= 0) {
+    /**
+     * Função que determina se um número é ou não positivo
+     *
+     * @param num Número a analisar
+     * @return true se positivo || false se negativo
+     */
+    public static boolean positivo(int num) {
+        if (num >= 0) {
+            return true;
+        } else {
             return false;
         }
-        int soma = 0;
-        int i = 1;
+    }
 
-        // Soma inteiros consecutivos até ultrapassar ou igualar o número
-        while (soma < num) {
-            soma += i;
-            i++;
+    /**
+     * Função que determina se um número é ou não primo
+     *
+     * @param num Número a analisar
+     * @return true se primo || false se não primo
+     */
+    public static boolean primo(int num) {
+
+        for (int divisor = 2; divisor < num; divisor++) {
+            if (num % divisor == 0) {
+                return false;
+            }
         }
 
-        return soma == num;
+        return true;
 
+    }
+
+    /**
+     * Função que determina se um número é ou não perfeito
+     *
+     * @param num Número a analisar
+     * @return true se perfeito || false se não perfeito
+     */
+    public static boolean perfeito(int num) {
+
+        int somaDivisores = 0;
+
+        for (int divisor = 1; divisor < num; divisor++) {
+            if (num % divisor == 0) {
+                somaDivisores += divisor;
+            }
+        }
+
+        if (somaDivisores == num) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Função que determina se um número é ou não trianguler
+     *
+     * @param num Número a analisar
+     * @return true se triangular || false se não triangular
+     */
+    public static boolean triangular(int num) {
+
+        int triangulares = 0;
+
+        for (int i = 0; triangulares < num; i++) {
+            triangulares += i;
+
+            if (triangulares == num) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
-
 
 

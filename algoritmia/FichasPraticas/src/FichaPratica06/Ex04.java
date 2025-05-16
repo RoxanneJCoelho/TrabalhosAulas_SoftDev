@@ -2,57 +2,103 @@ package FichaPratica06;
 
 import java.util.Scanner;
 
-import;
+import static FichaPratica06.Ex03.*;
 
 public class Ex04 {
     public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
-        int numero;
+
+        int numero, opcao;
 
         System.out.print("Insira um número: ");
         numero = input.nextInt();
 
-        int opcao;
         do {
-            System.out.println("\n--- Menu de Análise ---");
+            System.out.println("\n***** Programa de Análise de um Número: " + numero + " *****");
             System.out.println("1. Par ou Ímpar");
             System.out.println("2. Positivo ou Negativo");
-            System.out.println("3. Primo ou Não Primo");
-            System.out.println("4. Perfeito ou Não Perfeito");
-            System.out.println("5. Triangular ou Não Triangular");
+            System.out.println("3. Primo");
+            System.out.println("4. Perfeito");
+            System.out.println("5. Triangular");
             System.out.println("6. Trocar de Número");
             System.out.println("0. Sair");
-            System.out.print("Escolha uma opção: ");
+
+            System.out.print("Opção: ");
             opcao = input.nextInt();
 
-            switch (opcao) {
-                case 1:
-                    System.out.println(Ex03.par(numero) ? "O número é Par." : "O número é Ímpar.");
-                    break;
-                case 2:
-                    System.out.println(Ex03.positivo(numero) ? "O número é Positivo." : "O número é Negativo.");
-                    break;
-                case 3:
-                    System.out.println(Ex03.primo(numero) ? "O número é Primo." : "O número não é Primo.");
-                    break;
-                case 4:
-                    System.out.println(Ex03.perfeito(numero) ? "O número é Perfeito." : "O número não é Perfeito.");
-                    break;
-                case 5:
-                    System.out.println(Ex03.triangular(numero) ? "O número é Triangular." : "O número não é Triangular.");
-                    break;
-                case 6:
-                    System.out.print("Insira um novo número: ");
-                    numero = input.nextInt();
-                    break;
-                case 0:
-                    System.out.println("Programa terminado.");
-                    break;
-                default:
-                    System.out.println("Opção inválida. Tente novamente.");
-            }
+            System.out.println();
 
+            switch (opcao) {
+                case 1: // Par ou Ímpar
+
+                    if(par(numero)){
+                        System.out.println("Par");
+                    }else{
+                        System.out.println("Impar");
+                    }
+
+                    break;
+
+                case 2: // Positivo ou Negativo
+
+                    if(positivo(numero)){
+                        System.out.println("Positivo");
+                    }else{
+                        System.out.println("Negativo");
+                    }
+                    break;
+
+                case 3: // Primo
+
+                    if(primo(numero)){
+                        System.out.println("Primo");
+                    }else{
+                        System.out.println("Não Primo");
+                    }
+                    break;
+
+                case 4: // Perfeito
+
+                    if(perfeito(numero)){
+                        System.out.println("Perfeito");
+                    }else{
+                        System.out.println("Não Perfeito");
+                    }
+                    break;
+
+                case 5: // Triangular
+
+                    if(triangular(numero)){
+                        System.out.println("Triangular");
+                    }else{
+                        System.out.println("Não triangular");
+                    }
+                    break;
+
+                case 6: // Trocar de número
+
+                    System.out.print("Insira um número: ");
+                    numero = input.nextInt();
+
+                    break;
+
+                case 7: // Especial
+
+                    if(par(numero) && positivo(numero) && primo(numero)){
+                        System.out.println("É par, positivo e primo ao mesmo tempo");
+                    }
+
+                case 0: // Sair
+                    System.out.println("A encerrar programa...");
+                    break;
+
+                default:
+                    System.out.println("Opção Inválida!");
+                    break;
+            }
         } while (opcao != 0);
+
 
     }
 }

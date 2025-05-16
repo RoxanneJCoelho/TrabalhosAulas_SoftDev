@@ -4,32 +4,38 @@ import java.util.Scanner;
 
 public class Ex02 {
 
-    public static void main(String[] args) {
+    /**
+     * Função que lê um número inteiro e positivo da consola
+     * @return Número inteiro e positivo
+     */
+    public static int lerInteiroPositivo() {
         Scanner input = new Scanner(System.in);
-        int numero;
 
-        // Solicitar número até que seja inteiro positivo
+        int numeroUtilizador;
+
         do {
-            System.out.print("Introduza um número inteiro positivo: ");
-            while (!input.hasNextInt()) {
-                System.out.print("Valor inválido. Introduza um número inteiro positivo: ");
-                input.next(); // descarta a entrada inválida
-            }
-            numero = input.nextInt();
-            if (numero <= 0) {
-                System.out.println("O número deve ser positivo.");
-            }
-        } while (numero <= 0);
+            System.out.print("Introduza um número positivo: ");
+            numeroUtilizador = input.nextInt();
+        } while (numeroUtilizador < 0);
 
-        // Chamar a função que imprime os asteriscos
-        imprimirAsteriscos(numero);
+        return numeroUtilizador;
     }
 
-    // Função que imprime asteriscos numa linha
-    public static void imprimirAsteriscos(int n) {
-        for (int i = 0; i < n; i++) {
+    /**
+     * Funçãao que imprime x asteriscos
+     * @param quantidade Quantidade de asteriscos a ser impresso
+     */
+    public static void imprimirAsteriscos(int quantidade) {
+
+        for (int i = 0; i < quantidade; i++) {
             System.out.print("*");
         }
-        System.out.println(); // para mudar de linha no final
+
+    }
+
+    public static void main(String[] args) {
+
+        int numero = lerInteiroPositivo();
+        imprimirAsteriscos(numero);
     }
 }
