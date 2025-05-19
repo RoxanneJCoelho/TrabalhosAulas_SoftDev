@@ -42,8 +42,8 @@
 // parte 2: no prompt, caso o user coloque apagar, apaga a ultima coisa que adicionou
 // let shoppingList = []
 // let item = prompt('que elemento queres comprar?')
-// while (item !== 'código'){
-//     if (item == 'apagar'){
+// while (item.toLowerCase().trim() !== 'código'){
+//     if (item.toLowerCase().trim() == 'apagar'){
 //         shoppingList.pop()
 //     } else {
 //         shoppingList.push(item)
@@ -57,18 +57,45 @@
 
 // parte 3: No prompt, quando o user coloca apagar abre um prompt para escrever o item a apagar e apaga o mesmo.
 
-let shoppingList = []
-let item = prompt('que elemento queres comprar?')
-while (item !== 'código'){
-    if (item == 'apagar'){
-        deletedItem = prompt('que elemento queres apagar?')
-        shoppingList.indexOf(deletedItem)
-    } else {
-        shoppingList.push(item)
-    } 
-    item = prompt('que elemento queres comprar?')    
+// let shoppingList = []
+// let item = prompt('que elemento queres comprar?')
+// while (item.toLowerCase().trim() !== 'código'){
+//     if (item.toLowerCase().trim() == 'apagar'){
+//         deletedItem = prompt('que elemento queres apagar?')
+//         shoppingList.indexOf(deletedItem)
+//     } else {
+//         shoppingList.push(item)
+//     } 
+//     item = prompt('que elemento queres comprar?')    
+// }
+
+// for (let element of shoppingList){
+//     console.log(element)
+// }
+
+
+// const airplaneSeats = [
+// ['Ruth', 'Anthony', 'Stevie'],
+// ['Amelia', 'Pedro', 'Maya'],
+// ['Xavier', 'Ananya', 'Luis'],
+// ['Luke', null, 'Deniz'],
+// ['Rin', 'Sakura', 'Francisco']
+// ]
+
+
+// // substituir null pelo meu nome
+//  airplaneSeats[3][1]='Roxie'
+//  console.log(airplaneSeats)
+
+let product = {
+  nome: 'agulha de crochet',
+  inStock: true,
+  price: 1.99,
+  colors: ['vermelho','azul', 'verde']
 }
 
-for (let element of shoppingList){
-    console.log(element)
-}
+console.log(product.price)
+console.log(product.colors[2])
+
+product.price = 2.55
+console.log(product.price)
