@@ -1,0 +1,49 @@
+// ficha 1 
+// nome: Roxanne Coelho
+// ex1
+function multiply(num1, num2) {
+    return (num1 * num2)
+}
+
+//ex2
+function isShortWeather(temp) {
+    if (temp > 25) {
+        return true
+    } else {
+        return false
+    }
+}
+
+//ex3
+function lastElement([array]){
+    if (array.length == 0){
+        return null
+    } else {
+        return array[array.length - 1];
+    }
+}
+
+//ex4
+function sumArray([array]){
+    for(i=0;i < array.length;i++){
+        soma += array
+    }
+    return soma
+}
+
+//ex5
+function returnday(day){
+    if (day==1){
+        return segunda
+    } else if (day==2){
+        return terca
+    } else if (day==3){
+        return quarta
+    } else if (day==4){
+        return quinta
+    } else if (day==5){
+        return sexta
+    } else {
+        return null
+    }
+}
