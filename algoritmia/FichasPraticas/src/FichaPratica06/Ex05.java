@@ -1,36 +1,67 @@
 package FichaPratica06;
 
+import java.util.Scanner;
+
 public class Ex05 {
 
-    static int maior(int[]array){
-        int maior = array[0];
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] > maior) {
-                maior = array[i];
-            }
-        }
-        return maior;
-    }
 
-    static int menor(int[]array){
-        int menor = array[0];
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] < menor) {
-                menor = array[i];
-            }
-        }
-        return menor;
-    }
-    static boolean crescente (int[]array){
-        boolean crescente = true;
-        for (int i = 0; i < array.length-1; i++) {
-            if (array[i] > array[i+1]) {
-                crescente = false;
-            }
+    public static int[] lerVetorInteiros(int tamanho) {
+        int[] vetorPreencher = new int[tamanho];
+
+        // Import do Scanner
+        Scanner input = new Scanner(System.in);
+
+        // Ler vetor
+        for (int i = 0; i < vetorPreencher.length; i++) {
+            System.out.print("Insira no vetor[" + i + "]: ");
+            vetorPreencher[i] = input.nextInt();
         }
 
-        return crescente;
+        return vetorPreencher;
     }
 
+    public static void imprimirVetorInteiros(int[] vetor){
 
+        // Imprimir vetor
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.println("vetor[" + i + "]: " + vetor[i]);
+        }
+
+    }
+
+    public static int maiorElemento(int[] vetor){
+        int maiorElemento = vetor[0];
+
+        for (int i = 0; i < vetor.length; i++) {
+            if (vetor[i] > maiorElemento) {
+                maiorElemento = vetor[i];
+            }
+        }
+
+        return maiorElemento;
+    }
+
+    public static int menorElemento(int[] vetor){
+        int menorElemento = vetor[0];
+
+        for (int i = 0; i < vetor.length; i++) {
+            if (vetor[i] < menorElemento) {
+                menorElemento = vetor[i];
+            }
+        }
+
+        return menorElemento;
+    }
+
+    public static boolean vetorCrescente(int[] vetor){
+
+        for (int i = 1; i < vetor.length; i++) {
+
+            if (vetor[i] <= vetor[i - 1]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }

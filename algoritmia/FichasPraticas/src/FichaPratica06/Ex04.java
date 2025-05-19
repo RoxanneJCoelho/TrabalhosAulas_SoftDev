@@ -91,6 +91,7 @@ public class Ex04 {
                     } else {
                         System.out.println("não é um numero especial");
                     }
+                    break;
 
                 case 0: // Sair
                     System.out.println("A encerrar programa...");
