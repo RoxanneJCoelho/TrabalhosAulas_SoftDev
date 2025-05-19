@@ -19,8 +19,8 @@ public class Ex05 {
             array[i] = input.nextInt();
         }
         // Calcular soma
-        for (int i = 0; i<array.length; i++){
-            soma = soma+array[i];
+        for (int i = 0; i < array.length; i++) {
+            soma = soma + array[i];
         }
         // Calcular média
         media = soma / array.length;

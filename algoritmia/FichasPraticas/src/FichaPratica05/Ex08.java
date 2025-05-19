@@ -12,17 +12,17 @@ public class Ex08 {
         int[][] matriz = new int[3][3];
 
         // Ler matriz
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+        for (int i = 0; i < matriz.length; i++) { // ler a linha
+            for (int j = 0; j < matriz[0].length; j++) { // ler a coluna
                 System.out.print("Indique o número da posição [ " + i + " ] [ " + j + " ]: ");
                 matriz[i][j] = input.nextInt();
             }
         }
 
         // Apresentar matriz
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(matriz[i][j] + "\t");
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                System.out.print(matriz[i][j] + "\t"); // o t é para nao ficar tudo muito colado
             } System.out.println();
         }
 

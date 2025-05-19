@@ -2,8 +2,9 @@ package FichaPratica05;
 
 import java.util.Scanner;
 
-public class Ex04 {
+public class Ex03 {
     public static void main(String[] args) {
+
         // Import do Scanner
         Scanner input = new Scanner(System.in);
 
@@ -16,17 +17,16 @@ public class Ex04 {
             array[i] = input.nextInt();
         }
 
-        // Encontrar o maior elemento
+        // Encontrar o menor elemento
 
-        int maior = array[0]; // inicializar a variável com o 1 elemento para nos ajudar no for
+        int menor = array[0]; // inicializar a variável com o 1 elemento para nos ajudar no for
         for (int i = 0; i < array.length; i++) {
-            if (maior < array[i]) { // se o maior for menor que o array[i], ele atualiza para o valor do array[i]
-                maior = array[i];
+            if (menor > array[i]) { // se o menor for maior que o array[i], ele atualiza para o valor do array[i]
+                menor = array[i];
             }
 
         }
-        System.out.println("Maior: " + maior);
+        System.out.println("Menor: " + menor);
 
     }
-
 }

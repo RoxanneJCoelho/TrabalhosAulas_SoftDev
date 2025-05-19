@@ -9,34 +9,36 @@ public class Ex07 {
         Scanner input = new Scanner(System.in);
 
         // Declarar variáveis
-        int[] array = new int[10];
+        int[] vetor = new int[5];
 
-        // Ler array
-        for (int i = 0; i < array.length; i++) {
-            System.out.print("Indique o número [ " + i + " ]: ");
-            array[i] = input.nextInt();
+        // Ler vetor
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.print("Insira no vetor[" + i + "]: ");
+            vetor[i] = input.nextInt();
         }
 
-        // Encontrar o maior valor par
-        int maiorPar = 0;
-        boolean encontrouPar = false;
+        int maiorElemento = -1; // pode ser qualquer número impar
 
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
-                if (!encontrouPar || array[i] > maiorPar) { // se não encontrou um par, ele é o primeiro; se houver um numero maior que o maiorPar, ele atualiza
-                    maiorPar = array[i];
-                    encontrouPar = true;
+        for (int i = 0; i < vetor.length; i++) {
+            if (vetor[i] % 2 == 0) { // se o numero for par, entra neste if
+
+                if (maiorElemento % 2 != 0) {
+                    maiorElemento = vetor[i]; // se o primeiro numero for par, substitui o impar do maior elemento
                 }
+
+                if (vetor[i] > maiorElemento) { // se houver um par maior, substitui pelo par maior
+                    maiorElemento = vetor[i];
+                }
+
             }
         }
 
-        // Apresentar o maior valor par
-
-        if (encontrouPar) {
-            System.out.println("Maior número par: " + maiorPar);
+        if (maiorElemento % 2 == 0) {
+            System.out.println("Maior Par: " + maiorElemento);
         } else {
-            System.out.println("Não foi inserido nenhum número par.");
+            System.out.println("Não há pares");
         }
+
 
     }
 }
