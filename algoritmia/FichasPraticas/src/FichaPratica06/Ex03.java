@@ -81,7 +81,7 @@ public class Ex03 {
         int triangulares = 0;
 
         for (int i = 0; triangulares < num; i++) {
-            triangulares += i; // triangulares é a soma
+            triangulares += i; // triangulares é a soma dos numeros inteiros consecutivos tipo 1+2+3+4...
 
             if (triangulares == num) {
                 return true;

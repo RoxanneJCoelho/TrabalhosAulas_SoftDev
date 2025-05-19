@@ -22,6 +22,7 @@ public class Ex04 {
             System.out.println("4. Perfeito");
             System.out.println("5. Triangular");
             System.out.println("6. Trocar de Número");
+            System.out.println("7. Saber se é um número especial");
             System.out.println("0. Sair");
 
             System.out.print("Opção: ");
@@ -87,6 +88,8 @@ public class Ex04 {
 
                     if(par(numero) && positivo(numero) && primo(numero)){
                         System.out.println("É par, positivo e primo ao mesmo tempo");
+                    } else {
+                        System.out.println("não é um numero especial");
                     }
 
                 case 0: // Sair
