@@ -22,7 +22,7 @@ public class Ex02 {
     }
 
     /**
-     * Funçãao que imprime x asteriscos
+     * Função que imprime x asteriscos
      * @param quantidade Quantidade de asteriscos a ser impresso
      */
     public static void imprimirAsteriscos(int quantidade) {

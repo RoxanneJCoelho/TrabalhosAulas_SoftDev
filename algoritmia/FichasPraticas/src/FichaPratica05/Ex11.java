@@ -14,36 +14,41 @@ public class Ex11 {
         int menor = matriz [0][0];
 
         // Ler matriz
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
                 System.out.print("Indique o número da posição [ " + i + " ] [ " + j + " ]: ");
                 matriz[i][j] = input.nextInt();
             }
         }
 
-        // Pesquisar maior
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                if (maior < matriz[i][j]) {
-                        maior = matriz[i][j];
+        for (int linha = 0; linha < matriz.length; linha++) {
+            for (int coluna = 0; coluna < matriz[0].length; coluna++) {
+
+                // Percebemos se o elemento atual é maior
+                if (matriz[linha][coluna] > maior) {
+                    maior = matriz[linha][coluna];
                 }
+
+                // Percebemos se o elemento atual é menor
+                if (matriz[linha][coluna] < menor) {
+                    menor = matriz[linha][coluna];
+                }
+
             }
         }
 
-        // Pesquisar menor
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                if (menor > matriz[i][j]) {
-                    menor = matriz[i][j];
-                }
-            }
-        }
+        System.out.println("Menor: " + menor);
+        System.out.println("Maior: " + maior);
 
-        // Apresentar matriz
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(matriz[i][j] + "\t");
-            } System.out.println();
+
+        System.out.println("_____________________________________");
+
+        // Imprimir a matriz
+        for (int linha = 0; linha < matriz.length; linha++) {
+            for (int coluna = 0; coluna < matriz[0].length; coluna++) {
+                System.out.print(matriz[linha][coluna]+"\t");
+            }
+            System.out.println();
         }
     }
 }

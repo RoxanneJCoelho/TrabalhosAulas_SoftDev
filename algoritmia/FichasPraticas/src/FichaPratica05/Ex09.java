@@ -13,21 +13,21 @@ public class Ex09 {
         double soma = 0;
 
         // Ler matriz
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
                 System.out.print("Indique o número da posição [ " + i + " ] [ " + j + " ]: ");
                 matriz[i][j] = input.nextInt();
             }
         }
 
         // Calcular soma
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                soma = soma + matriz[i][j];
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                soma += matriz[i][j];
             }
         }
 
         // Apresentar soma
-        System.out.println("Soma: " + soma);
+        System.out.println("Soma dos Elementos: " + soma);
     }
 }

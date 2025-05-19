@@ -40,13 +40,11 @@ public class Ex03 {
     public static boolean primo(int num) {
 
         for (int divisor = 2; divisor < num; divisor++) {
-            if (num % divisor == 0) {
+            if (num % divisor == 0) { // se dividir por algum número não é primo
                 return false;
             }
         }
-
         return true;
-
     }
 
     /**
@@ -65,7 +63,7 @@ public class Ex03 {
             }
         }
 
-        if (somaDivisores == num) {
+        if (somaDivisores == num) { // o numero perfeito é igual a soma dos seus divisores
             return true;
         } else {
             return false;
@@ -73,7 +71,7 @@ public class Ex03 {
     }
 
     /**
-     * Função que determina se um número é ou não trianguler
+     * Função que determina se um número é ou não triangular
      *
      * @param num Número a analisar
      * @return true se triangular || false se não triangular
@@ -83,7 +81,7 @@ public class Ex03 {
         int triangulares = 0;
 
         for (int i = 0; triangulares < num; i++) {
-            triangulares += i;
+            triangulares += i; // triangulares é a soma
 
             if (triangulares == num) {
                 return true;

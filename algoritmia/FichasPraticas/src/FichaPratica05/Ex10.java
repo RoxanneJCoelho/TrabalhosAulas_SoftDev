@@ -14,8 +14,8 @@ public class Ex10 {
         int soma = 0;
 
         // Ler matriz
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 5; j++) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
                 System.out.print("Indique o número da posição [ " + i + " ] [ " + j + " ]: ");
                 matriz[i][j] = input.nextInt();
             }
@@ -26,8 +26,8 @@ public class Ex10 {
         pesquisa = input.nextInt();
 
         // Calcular pesquisa
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 5; j++) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
                 if (pesquisa == matriz[i][j]){
                     soma++;
                 }
