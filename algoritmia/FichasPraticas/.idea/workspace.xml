@@ -109,23 +109,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Ex01.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex02.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex03.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex04.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex05.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex06.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex07.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex08.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex09.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Ex10.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Ex01.executor": "Run",
+    "Application.Ex02.executor": "Run",
+    "Application.Ex03.executor": "Run",
+    "Application.Ex04.executor": "Run",
+    "Application.Ex05.executor": "Run",
+    "Application.Ex06.executor": "Run",
+    "Application.Ex07.executor": "Run",
+    "Application.Ex08.executor": "Run",
+    "Application.Ex09.executor": "Run",
+    "Application.Ex10.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sw18/Desktop/cesae2025/algoritmia"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sw18\Desktop\cesae2025\algoritmia\FichasPraticas\Ficheiros" />

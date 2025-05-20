@@ -22,8 +22,10 @@ public class Ex01 {
         }
     }
 
-    public static void main(String[] args) {
-        imprimirFicheiro(Ficheiros/FichaPratica07/exercicio_01.txt);
+    public static void main(String[] args) throws FileNotFoundException {
+        imprimirFicheiro("Ficheiros/FichaPratica07/exercicio_01.txt");
+        imprimirFicheiro("Ficheiros/FichaPratica07/exercicio_01_Alternativa01.txt");
+        imprimirFicheiro("Ficheiros/FichaPratica07/exercicio_01_Alternativa02.txt");
 
     }
 }
