@@ -15,12 +15,44 @@ public class Aluno {
         this.media = media;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public double getMedia() {
+        return media;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    public void setMedia(double media) {
+        this.media = media;
+    }
+
+    public void felizAniversario(){
+        this.idade += 1;
+    }
+
     public boolean situacaoAprovacao() {
         if (this.media >= 9.5) {
-            System.out.println(this.nome+": Aprovado");
+            System.out.println(this.nome + ": Aprovado");
             return true;
         } else {
-            System.out.println(this.nome+": Reprovado");
+            System.out.println(this.nome + ": Reprovado");
             return false;
         }
     }
