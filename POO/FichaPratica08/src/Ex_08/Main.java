@@ -26,8 +26,8 @@ public class Main {
         produto2.exibirDetalhes();
         System.out.println("_____________________________________________");
 
-        produto1.venderStock(90);
-        produto2.venderStock(15);
+        produto1.venderProduto(90);
+        produto2.venderProduto(15);
 
         System.out.println("_____________________________________________");
         produto1.exibirDetalhes();

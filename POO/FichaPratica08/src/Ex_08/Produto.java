@@ -10,12 +10,28 @@ public class Produto {
         this.preco = preco;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public int getQuantidadeStock() {
+        return quantidadeStock;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
     public void adquirirStock(int quantidadeAdquirida) {
         this.quantidadeStock += quantidadeAdquirida;
         System.out.println("Stock de " + this.nome + " adquirido: " + quantidadeAdquirida);
     }
 
-    public void venderStock(int quantidadeVendida) {
+    public void venderProduto(int quantidadeVendida) {
 
         if (this.quantidadeStock >= quantidadeVendida) { // Temos stock para a venda
             this.quantidadeStock -= quantidadeVendida;
