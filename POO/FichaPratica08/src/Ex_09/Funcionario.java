@@ -40,6 +40,7 @@ public class Funcionario {
         return salario;
     }
 
+    // Métodos de acesso (setters)
     public void setDepartamento(String departamento) {
         this.departamento = departamento;
     }
