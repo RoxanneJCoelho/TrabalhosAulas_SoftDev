@@ -4,10 +4,11 @@ public class Circulo {
     private String cor;
     private double raio;
 
-    public Circulo(double raio) {
-        this.cor="Branco";
-        this.raio = raio;
-    }
+    /**
+     * Método construtor para Circulo
+     * @param cor Cor do Circulo
+     * @param raio Raio do Círculo (m.)
+     */
 
     public Circulo(String cor, double raio) {
         this.cor = cor;
