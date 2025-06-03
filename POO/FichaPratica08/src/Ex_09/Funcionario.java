@@ -57,10 +57,10 @@ public class Funcionario {
      * Exibe os dados completos do funcionário
      */
     public void exibirDados() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Email: " + email);
-        System.out.println("Departamento: " + departamento);
-        System.out.println("Salário: " + salario + " €");
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Email: " + this.email);
+        System.out.println("Departamento: " + this.departamento);
+        System.out.println("Salário: " + this.salario + " €");
     }
 }
 

@@ -9,10 +9,10 @@ public class Main {
         Pessoa pessoa4 = new Pessoa("Sofia",18,"Lisboa","sofia@mail.pt",911888999);
 
         Agenda aMinhaAgenda = new Agenda(20);
-        aMinhaAgenda.adicionarContacto(pessoa1);
-        aMinhaAgenda.adicionarContacto(pessoa2);
-        aMinhaAgenda.adicionarContacto(pessoa3);
-        aMinhaAgenda.adicionarContacto(pessoa4);
+        aMinhaAgenda.adicionarPessoa(pessoa1);
+        aMinhaAgenda.adicionarPessoa(pessoa2);
+        aMinhaAgenda.adicionarPessoa(pessoa3);
+        aMinhaAgenda.adicionarPessoa(pessoa4);
 
         aMinhaAgenda.listarContactos();
 

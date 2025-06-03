@@ -8,7 +8,7 @@ public class Agenda {
         this.listaContactos = new Pessoa[tamanhoLista];
     }
 
-    public void adicionarContacto(Pessoa contactoNovo) {
+    public void adicionarPessoa(Pessoa contactoNovo) {
 
         for (int i = 0; i < this.listaContactos.length; i++) {
             if (this.listaContactos[i] == null) {

@@ -23,6 +23,11 @@ public class Imovel {
         this.areaPiscina = areaPiscina;
     }
 
+    // metodo para mudar o acabamento
+    public void setAcabamento(AcabamentoImovel acabamento) {
+        this.acabamento = acabamento;
+    }
+
     public double calcularValor() {
         double valorTotal = 0;
 
