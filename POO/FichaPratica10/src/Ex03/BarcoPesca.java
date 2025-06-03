@@ -53,4 +53,42 @@ public class BarcoPesca {
             System.out.println("Limite da carga excedido! Não foi possível pescar");
         }
     }
+
+    public void largarPeixe(int posicao) {
+        if (posicao >= 0 && posicao < peixesPescados.size()) {
+            Peixe removido = peixesPescados.remove(posicao);
+            System.out.println("Peixe largado: " + removido.getEspecie());
+        } else {
+            System.out.println("Posição inválida! Nenhum peixe foi largado.");
+        }
+    }
+
+    public void largarMarisco(int posicao) {
+        if (posicao >= 0 && posicao < mariscoPescado.size()) {
+            Marisco removido = mariscoPescado.remove(posicao);
+            System.out.println("Marisco largado: " + removido.getEspecie());
+        } else {
+            System.out.println("Posição inválida! Nenhum peixe foi largado.");
+        }
+    }
+
+    public double calcularTotal(){
+        double total = 0.0;
+        for (Peixe peixe : peixesPescados) {
+            total += peixe.getPeso() * peixe.getPrecoKg();
+        }
+
+        for (Marisco marisco : mariscoPescado) {
+            total += marisco.getPeso() * marisco.getPrecoKg();
+        }
+
+        return total;
+
+    }
+    public double salarioTripulado(){
+        double total = calcularTotal();
+        double valorDistribuido = total * 0.60; // 60% para os tripulantes
+        return valorDistribuido / this.tripulacao;
+
+    }
 }
