@@ -22,4 +22,5 @@ public class Marisco {
     public double getPrecoKg() {
         return precoKg;
     }
+
 }

@@ -38,9 +38,9 @@ public class BarcoPesca {
         double pesoAtual = cargaAtual();
         if (pesoAtual + peixe.getPeso() <= capacidadeCarga) {
             peixesPescados.add(peixe);
-            System.out.println("Peixe " + peixe.getEspecie() + "pescado com sucesso!");
+            System.out.println(peixe.getPeso() + "kg do peixe " + peixe.getEspecie() + "pescado com sucesso!");
         } else {
-            System.out.println("Limite da carga excedido! Não foi possível pescar");
+            System.out.println("Limite da carga excedido do " + this.nome + "! Não foi possível pescar " + peixe.getEspecie());
         }
     }
 
@@ -48,9 +48,9 @@ public class BarcoPesca {
         double pesoAtual = cargaAtual();
         if (pesoAtual + marisco.getPeso() <= capacidadeCarga) {
             mariscoPescado.add(marisco);
-            System.out.println("Marisco " + marisco.getEspecie() + "pescado com sucesso!");
+            System.out.println(marisco.getPeso() + "kg do Marisco " + marisco.getEspecie() + "pescado com sucesso!");
         } else {
-            System.out.println("Limite da carga excedido! Não foi possível pescar");
+            System.out.println("Limite da carga excedido do " + this.nome + "! Não foi possível pescar " + marisco.getEspecie());
         }
     }
 
