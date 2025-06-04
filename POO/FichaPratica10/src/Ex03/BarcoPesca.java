@@ -34,16 +34,19 @@ public class BarcoPesca {
         return peso;
     }
 
+// maneira do stor
     public void pescarPeixe(Peixe peixe) {
-        double pesoAtual = cargaAtual();
-        if (pesoAtual + peixe.getPeso() <= capacidadeCarga) {
-            peixesPescados.add(peixe);
-            System.out.println(peixe.getPeso() + "kg do peixe " + peixe.getEspecie() + "pescado com sucesso!");
+        if (this.cargaAtual() + peixe.getPeso() <= this.capacidadeCarga) {
+            // Barco pode com o peixe novo, já tendo em conta a carga atual (o que já está pescado)
+            this.peixesPescados.add(peixe);
+            System.out.println(peixe.getPeso() + " Kg. de " + peixe.getEspecie() + " pescados.");
         } else {
-            System.out.println("Limite da carga excedido do " + this.nome + "! Não foi possível pescar " + peixe.getEspecie());
+            // Barco não tem capacidade para aguentar com este peixe novo
+            System.out.println("O " + this.nome + " não tem capacidade para pescar " + peixe.getEspecie());
         }
     }
 
+    // maneira do chatgpt
     public void pescarMarisco(Marisco marisco) {
         double pesoAtual = cargaAtual();
         if (pesoAtual + marisco.getPeso() <= capacidadeCarga) {
@@ -54,26 +57,18 @@ public class BarcoPesca {
         }
     }
 
-    public void largarPeixe(int posicao) {
-        if (posicao >= 0 && posicao < peixesPescados.size()) {
-            Peixe removido = peixesPescados.remove(posicao);
-            System.out.println("Peixe largado: " + removido.getEspecie());
-        } else {
-            System.out.println("Posição inválida! Nenhum peixe foi largado.");
-        }
+    public void largarPeixe(Peixe peixeLargar) {
+        this.peixesPescados.remove(peixeLargar);
+        System.out.println(peixeLargar.getEspecie() + " largados...");
     }
 
-    public void largarMarisco(int posicao) {
-        if (posicao >= 0 && posicao < mariscoPescado.size()) {
-            Marisco removido = mariscoPescado.remove(posicao);
-            System.out.println("Marisco largado: " + removido.getEspecie());
-        } else {
-            System.out.println("Posição inválida! Nenhum peixe foi largado.");
-        }
+    public void largarMarisco(Marisco mariscoLargar) {
+        this.mariscoPescado.remove(mariscoLargar);
+        System.out.println(mariscoLargar.getEspecie() + " largados...");
     }
 
     public double calcularTotal(){
-        double total = 0.0;
+        double total = 0;
         for (Peixe peixe : peixesPescados) {
             total += peixe.getPeso() * peixe.getPrecoKg();
         }
@@ -86,9 +81,25 @@ public class BarcoPesca {
 
     }
     public double salarioTripulado(){
-        double total = calcularTotal();
-        double valorDistribuido = total * 0.60; // 60% para os tripulantes
-        return valorDistribuido / this.tripulacao;
+        return (this.calcularTotal() * 0.6) / this.tripulacao;
 
+    }
+    public void exibirDetalhes() {
+        System.out.println("\n********** " + this.nome + " | " + this.cor + " | Ano Construção: " + this.anoFabrico + " | " + this.marca + " **********");
+        System.out.println("Num. Tripulantes: " + this.tripulacao + " | Carga: " + this.cargaAtual() + "/" + this.capacidadeCarga + " Kg. | " + this.calcularTotal() + " €" + " | Salário Atual Individual: " + this.salarioTripulado() + " €");
+        System.out.println("\nCarga de Peixe: ");
+
+        // Listar o peixe
+        for (Peixe peixeAtual : this.peixesPescados) {
+            peixeAtual.exibirDetalhes();
+        }
+
+        System.out.println("\nCarga de Marisco: ");
+        // Listar o marisco
+        for (Marisco mariscoAtual : this.mariscoPescado) {
+            mariscoAtual.exibirDetalhes();
+        }
+
+        System.out.println("\n********************************************************************************\n");
     }
 }

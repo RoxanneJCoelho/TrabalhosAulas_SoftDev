@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/FichaPratica11/Ex01/Ex01.iml" filepath="$PROJECT_DIR$/FichaPratica11/Ex01/Ex01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FichaPratica11/Ex03/Ex03.iml" filepath="$PROJECT_DIR$/FichaPratica11/Ex03/Ex03.iml" />
       <module fileurl="file://$PROJECT_DIR$/FichaPratica08/FichaPratica08.iml" filepath="$PROJECT_DIR$/FichaPratica08/FichaPratica08.iml" />
       <module fileurl="file://$PROJECT_DIR$/FichaPratica09/FichaPratica09.iml" filepath="$PROJECT_DIR$/FichaPratica09/FichaPratica09.iml" />
       <module fileurl="file://$PROJECT_DIR$/FichaPratica10/FichaPratica10.iml" filepath="$PROJECT_DIR$/FichaPratica10/FichaPratica10.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FichaPratica11/FichaPratica11/FichaPratica11.iml" filepath="$PROJECT_DIR$/FichaPratica11/FichaPratica11/FichaPratica11.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/POO.iml" filepath="$PROJECT_DIR$/.idea/POO.iml" />
     </modules>
   </component>
