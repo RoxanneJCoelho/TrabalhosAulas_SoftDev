@@ -45,3 +45,8 @@ img.square {
     width: 55px;
     height: 55px;
 }
+
+.classListTest{
+    background-color: #561e8f;
+    border: 10px solid black;
+}
