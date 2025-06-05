@@ -23,4 +23,8 @@ public class Marisco {
         return precoKg;
     }
 
+    public void exibirDetalhes() {
+        System.out.println(this.especie + " | " + this.peso + " Kg. | Preço: " + this.precoKg + " €/Kg.");
+    }
+
 }

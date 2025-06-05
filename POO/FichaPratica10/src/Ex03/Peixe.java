@@ -22,4 +22,7 @@ public class Peixe {
     public double getPrecoKg() {
         return precoKg;
     }
+    public void exibirDetalhes() {
+        System.out.println(this.especie + " | " + this.peso + " Kg. | Preço: " + this.precoKg + " €/Kg.");
+    }
 }
