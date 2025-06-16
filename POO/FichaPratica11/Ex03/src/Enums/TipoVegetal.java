@@ -1,5 +1,5 @@
 package Enums;
 
 public enum TipoVegetal {
-    TOMATE, CEBOLA, PIMENTO, COGUMELOS, MILHO
+    TOMATE, CEBOLA, PIMENTO, COGUMELO, MILHO, AZEITONA
 }
