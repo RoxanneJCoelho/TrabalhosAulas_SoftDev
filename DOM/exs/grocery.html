@@ -4,18 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vou às Compras</title>
+    <script src="../js/ex10.js" defer></script>
   </head>
   <body>
-    <form>
-      <input type="text" placeholder="Introduza o Produto" value="" /><br />
+    <form action="compras.php">
+      <input type="text" name ="text" placeholder="Introduza o Produto" value="" /><br />
       <input id="qt"
         type="number"
+        name = "quantidade"
         placeholder="Introduza a Quantidade"
         value=""
       /><br />
       <button type="submit">Submeter</button>
     </form>
 
-    <ul></ul>
+    <ul id="lista"></ul>
   </body>
 </html>
