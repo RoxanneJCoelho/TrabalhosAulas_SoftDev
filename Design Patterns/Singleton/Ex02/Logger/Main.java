@@ -1,4 +1,4 @@
-package Ex02;
+package Ex02.Logger;
 
 import java.io.IOException;
 
