@@ -3,7 +3,7 @@ package Ex01;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class MainEx01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
