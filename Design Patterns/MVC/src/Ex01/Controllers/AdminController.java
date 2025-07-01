@@ -7,7 +7,6 @@ import java.io.FileNotFoundException;
 
 public class AdminController {
 
-
     private SalesRepository salesRepository;
 
     public AdminController() throws FileNotFoundException {
@@ -24,6 +23,5 @@ public class AdminController {
 
         return totalSalesValue;
     }
-
 
 }
