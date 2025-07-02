@@ -4,13 +4,12 @@ import java.util.Scanner;
 
 public class MainEx02 {
         public static void main(String[] args) {
-            TacoBell factory = new TacoBell();
             Scanner scanner = new Scanner(System.in);
 
             System.out.print("Que tipo de taco desejas (vaca, frango ou vegetariano)? ");
             String tipo = scanner.nextLine();
 
-            Taco taco = factory.criarTaco(tipo);
+            Taco taco = TacoBell.criarTaco(tipo);
 
             if (taco != null) {
                 taco.prepare();

@@ -1,7 +1,7 @@
 package Ex02;
 
 public class TacoBell {
-    public Taco criarTaco(String tipo) {
+    public static Taco criarTaco(String tipo) {
         if (tipo.equalsIgnoreCase("vaca")) {
             return new TacoCarneVaca();
         } else if (tipo.equalsIgnoreCase("frango")) {
