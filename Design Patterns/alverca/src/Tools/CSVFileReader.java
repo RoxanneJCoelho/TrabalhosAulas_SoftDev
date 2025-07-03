@@ -15,7 +15,7 @@ public class CSVFileReader {
 
         // abrimos o ficheiro e um scanner
         File userFile = new File(filePath);
-        Scanner userScanner = new Scanner(filePath);
+        Scanner userScanner = new Scanner(userFile);
 
         // criar array user vazio
         ArrayList<User> userArray = new ArrayList<>();
@@ -37,15 +37,19 @@ public class CSVFileReader {
             String utilizador = linhaSeparada[1];
             String password = linhaSeparada[2];
 
+            // construir o objeto e adicionar no array
+            User user = new User(tipoConta, utilizador, password);
+            userArray.add(user);
 
-        } return userArray;
+        }
+        return userArray;
     }
 
     public ArrayList<Jogador> jogadorFileReader (String filePath) throws FileNotFoundException {
 
         // abrimos o ficheiro e um scanner
         File userFile = new File(filePath);
-        Scanner userScanner = new Scanner(filePath);
+        Scanner userScanner = new Scanner(userFile);
 
         // criar novo array jogador vazio
         ArrayList<Jogador> jogadorArray = new ArrayList<>();
@@ -71,7 +75,12 @@ public class CSVFileReader {
             int rankingAtaque = Integer.parseInt(linhaSeparada[5]);
             int valorCompra = Integer.parseInt(linhaSeparada[6]);
 
+            // construir o objeto e adicionar ao array
+            Jogador jogador = new Jogador(numero, nome, idade, nacionalidade, rankingDefesa, rankingAtaque, valorCompra);
+            jogadorArray.add(jogador);
+
         }
+
         return jogadorArray;
 
     }
@@ -80,7 +89,7 @@ public class CSVFileReader {
 
         // abrimos o ficheiro e um scanner
         File userFile = new File(filePath);
-        Scanner userScanner = new Scanner(filePath);
+        Scanner userScanner = new Scanner(userFile);
 
         // criar novo array jogador vazio
         ArrayList<Competicao> competicaoArray = new ArrayList<>();
@@ -107,6 +116,10 @@ public class CSVFileReader {
             String adversario = linhaSeparada[2];
             int golosNossos = Integer.parseInt(linhaSeparada[3]);
             int golosAdversario = Integer.parseInt(linhaSeparada[4]);
+
+            // Construir o objeto e adicionar ao array
+            Competicao competicao1 = new Competicao(dia, mes, ano, competicao, adversario, golosNossos, golosAdversario);
+            competicaoArray.add(competicao1);
 
         }
         return competicaoArray;
