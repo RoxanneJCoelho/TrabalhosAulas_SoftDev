@@ -48,8 +48,7 @@ public class LoginView {
         do{
             System.out.println("*********+ Bem vindo/a ao Programa do Clube da Alverca ************");
             System.out.println("1 - Jogador");
-            System.out.println("2 - Treinador");
-            System.out.println("3 - Administrador");
+            System.out.println("2 - Staff");
             System.out.println("0 - Sair do Programa");
 
             System.out.println("Opção: ");
@@ -60,7 +59,7 @@ public class LoginView {
                     JogadorView jogadorView = new JogadorView();
                     jogadorView.jogadorMenu();
                     break;
-                case 2, 3:
+                case 2:
                     this.loginMenu();
                     break;
                 case 0:
