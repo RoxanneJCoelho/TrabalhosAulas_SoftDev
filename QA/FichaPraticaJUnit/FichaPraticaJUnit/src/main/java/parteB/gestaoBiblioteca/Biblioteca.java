@@ -89,7 +89,9 @@ public class Biblioteca {
      */
     public String listarLivros() {
         String lista = "";
+
         for (int i = 0; i < livros.size(); i++) {
+
             lista = lista + livros.get(i).obterResumo();
             if (i < livros.size() - 1) {
                 lista = lista + "\n";
