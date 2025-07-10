@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a1cf57fd-bf87-492a-a183-d62784f5d9b9" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2zJgZnqMPoMu7ldiAhEiKa3af21" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.ContaBancariaTest.executor": "Run",
+    "JUnit.ContaBancariaTest.testAplicarRendimentoMensal.executor": "Run",
+    "JUnit.ContaBancariaTest.testGerarResumoConta.executor": "Coverage",
+    "JUnit.ContaBancariaTest.testLevantar.executor": "Run",
+    "JUnit.ContaBancariaTest.testTransferir.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/sw18/Downloads/FichaPraticaJUnit/FichaPraticaJUnit/src/test/java/parteA",
+    "last_opened_file_path": "C:/Users/sw18/Downloads/FichaPraticaJUnit",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="parteA.gestaoProduto" />
+      <recent name="parteA.gestaoBancaria" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ContaBancariaTest.testGerarResumoConta">
+    <configuration name="ContaBancariaTest.testAplicarRendimentoMensal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FichaPraticaJUnit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parteA.gestaoBancaria.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parteA.gestaoBancaria" />
+      <option name="MAIN_CLASS_NAME" value="parteA.gestaoBancaria.ContaBancariaTest" />
+      <option name="METHOD_NAME" value="testAplicarRendimentoMensal" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaBancariaTest.testGerarResumoConta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FichaPraticaJUnit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parteA.gestaoBancaria.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parteA.gestaoBancaria" />
+      <option name="MAIN_CLASS_NAME" value="parteA.gestaoBancaria.ContaBancariaTest" />
+      <option name="METHOD_NAME" value="testGerarResumoConta" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaBancariaTest.testLevantar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FichaPraticaJUnit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parteA.gestaoBancaria.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parteA.gestaoBancaria" />
+      <option name="MAIN_CLASS_NAME" value="parteA.gestaoBancaria.ContaBancariaTest" />
+      <option name="METHOD_NAME" value="testLevantar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContaBancariaTest.testTransferir" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FichaPraticaJUnit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parteA.gestaoBancaria.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parteA.gestaoBancaria" />
+      <option name="MAIN_CLASS_NAME" value="parteA.gestaoBancaria.ContaBancariaTest" />
+      <option name="METHOD_NAME" value="testTransferir" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ContaBancariaTest.testGerarResumoConta" />
+        <item itemvalue="JUnit.ContaBancariaTest.testAplicarRendimentoMensal" />
+        <item itemvalue="JUnit.ContaBancariaTest.testTransferir" />
+        <item itemvalue="JUnit.ContaBancariaTest.testLevantar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1cf57fd-bf87-492a-a183-d62784f5d9b9" name="Changes" comment="" />
+      <created>1751454647762</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751454647762</updated>
+    </task>
+    <servers />
+  </component>
+</project>
