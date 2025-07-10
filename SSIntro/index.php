@@ -16,6 +16,11 @@
     <h1>Olá Servidor</h1> 
     <h2>Olá <?= $name ? $name : 'Utilizador' ?></h2>
     <p><?= plus(8, 6) ?></p>
+
+    <p>Olá <?= hello ('Sara', 'Monteiro') ?></p>
+
+    <p>Olá <?= $students [2] ?></p>
+
     <?php
     foreach($students as $item){
         echo $item .'</br>';
