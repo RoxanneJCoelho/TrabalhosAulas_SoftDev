@@ -35,6 +35,22 @@ public class Atleta {
         this.totalHorasTreino = 0.0;
     }
 
+    public double getTotalHorasTreino() {
+        return totalHorasTreino;
+    }
+
+    public int getTotalMedalhas() {
+        return totalMedalhas;
+    }
+
+    public String getClube() {
+        return clube;
+    }
+
+    public double getRecorde() {
+        return recorde;
+    }
+
     /**
      * Simula uma competição, retornando uma mensagem com o tempo alcançado.
      *
@@ -50,15 +66,15 @@ public class Atleta {
      *
      * @param horas O número de horas treinadas
      */
-    public void treinar(double horas) {
-        totalHorasTreino += horas;
+    public double treinar(double horas) {
+        return totalHorasTreino += horas;
     }
 
     /**
      * Adiciona uma medalha ao total de medalhas conquistadas.
      */
-    public void adicionarMedalha() {
-        totalMedalhas++;
+    public int adicionarMedalha() {
+        return totalMedalhas++;
     }
 
     /**
@@ -66,8 +82,8 @@ public class Atleta {
      *
      * @param novoRecorde O novo tempo alcançado na competição (em segundos)
      */
-    public void atualizarRecorde(double novoRecorde) {
-        recorde = novoRecorde;
+    public double atualizarRecorde(double novoRecorde) {
+        return recorde = novoRecorde;
     }
 
     /**

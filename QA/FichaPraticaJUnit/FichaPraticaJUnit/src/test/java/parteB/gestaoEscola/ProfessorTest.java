@@ -1,10 +1,10 @@
-package parteA.gestaoProduto;
+package parteB.gestaoEscola;
 
 import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ProdutoTest {
+class ProfessorTest {
 
     @BeforeEach
     void setUp() {
